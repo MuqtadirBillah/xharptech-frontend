@@ -1,3 +1,4 @@
+// Colors 
 $main-light-color: #D7BB70;
 $main-blue-color: #00C2FF;
 $black-color: #000000;
@@ -7,6 +8,38 @@ $poster-color-d2: #74DEFF;
 $poster-color-d3: #DEEDF2;
 $poster-color-d4: #DEE7FF;
 $poster-color-d5: #EDFBFF;
+// Colors 
+
+// fonts 
+@font-face {
+    font-family: "Futura Light Font";
+    src: local("Futura"),
+     url("./fonts/FuturaLightFont.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Futura Heavy Font";
+    src: local("Futura"),
+     url("./fonts/FuturaHeavyFont.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Futura Bold Font";
+    src: local("Futura"),
+     url("./fonts/FuturaBoldFont.ttf") format("truetype");
+    font-weight: bold;
+}
+// fonts 
+
+// Functions 
+@mixin sectionMainHeading() {
+    font-family: Futura Heavy Font;
+    font-size: 4rem;
+}
+@mixin sectionMainHeadingMedium() {
+    font-family: Futura Heavy Font;
+    font-size: 3rem !important;
+}
 @mixin padding-shared() {
     padding-left: 70px;
     padding-right: 70px;
@@ -19,10 +52,13 @@ $poster-color-d5: #EDFBFF;
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
+// Functions 
 
 body{
+    font-family: Futura Light Font;
     .navigation{
         position: fixed;
+        // display: none;
         z-index: 100;
         width: 100%;
         .navbar{
@@ -49,6 +85,7 @@ body{
                             a{
                                 color: $poster-color-d1;
                                 font-weight: 600;
+                                font-family: Futura Bold Font;
                                 &:hover{
                                     color: black;
                                 }
@@ -75,6 +112,7 @@ body{
                                     h1{
                                         margin-bottom: 20px;
                                         font-size: 2.8rem;
+                                        font-family: Futura Bold Font;
                                     }
                                     p{
                                         margin-bottom: 30px;
@@ -85,8 +123,8 @@ body{
                                         border: 2px solid rgba(0,0,0,0);
                                         border-radius: 50px;
                                         padding: 15px 30px;
-                                        font-weight: 500;
-                                        font-size: medium;
+                                        font-weight: 600;
+                                        font-size: large;
                                         color: white;
                                         -webkit-transition: all 0.5s ease-out;
                                         -moz-transition: all 0.5s ease-out;
@@ -103,6 +141,7 @@ body{
                                 }
                                 .right{
                                     text-align: right;
+                                    max-width: 100%;
                                 }
                             }
                         }
@@ -119,11 +158,12 @@ body{
     .services{
         padding: 50px 70px;
         @include padding-shared;
+        padding-top: 100px;
         h5{
             font-weight: 700;
         }
         .sectionMainHeading{
-            font-size: 5rem;
+            @include sectionMainHeading();
             font-weight: 800;
         }
         .servicesCards{
@@ -151,6 +191,7 @@ body{
                         .cardBody{
                             h4{
                                 font-weight: 800;
+                                font-family: Futura Bold Font;
                             }
                             h5{
                                 font-weight: 400;
@@ -180,11 +221,15 @@ body{
     .testimonials{
         padding: 50px 70px;
         @include padding-shared;
+        padding-top: 0;
+        .slick-arrow{
+            display: none !important;
+        }
         h5{
             font-weight: 700;
         }
         .sectionMainHeading{
-            font-size: 5rem;
+            @include sectionMainHeading();
             margin-bottom: 50px;
             font-weight: 800;
         }
@@ -223,6 +268,7 @@ body{
                 margin-top: 30px;
                 .line1{
                     font-size: x-large;
+                    font-family: Futura Bold Font;
                     i{
                         color: $main-blue-color;
                         -webkit-transform: scaleX(-1);
@@ -248,12 +294,14 @@ body{
         .h1Num{
             font-size: 4rem;
             font-weight: 700;
+            font-family: Futura Heavy Font;
         }
         h3{
 
         }
         .sectionMainHeading{
-            font-size: 5rem;
+            @include sectionMainHeading();
+            font-family: Futura Heavy Font;
             font-weight: 800;
         }
         .stats{
@@ -278,7 +326,7 @@ body{
         padding: 50px 70px;
         @include padding-shared;
         .sectionMainHeading{
-            font-size: 5rem;
+            @include sectionMainHeading();
             font-weight: 800;
         }
         .container-fluid{
@@ -293,6 +341,7 @@ body{
                 .right{
                     h2{
                         font-weight: 400;
+                        font-family: Futura Bold Font;
                     }
                 }
             }
@@ -302,8 +351,11 @@ body{
         padding: 50px 70px;
         @include padding-shared;
         margin-top: 30px;
+        .slick-arrow{
+            display: none !important;
+        }
         .sectionMainHeading{
-            font-size: 5rem;
+            @include sectionMainHeading();
             font-weight: 800;
         }
         .slider{
@@ -383,7 +435,7 @@ body{
             font-weight: 700;
         }
         .sectionMainHeading{
-            font-size: 5rem;
+            @include sectionMainHeading();
             margin-bottom: 50px;
             font-weight: 800;
         }
@@ -456,6 +508,7 @@ body{
                     h1{
                         font-size: 4rem;
                         font-weight: 800;
+                        font-family: Futura Bold Font;
                     }
                     h2{
                         font-size: xx-large;
@@ -466,11 +519,11 @@ body{
                     }
                     button{
                         background-color: $black-color;
-                        padding: 20px 30px;
+                        padding: 15px 30px;
                         border: 0;
                         border-radius: 50px;
                         color: white;
-                        font-size: larger;
+                        font-size: x-large;
                         margin-top: 30px;
                         -webkit-transition: all 0.2s ease-out;
                         -moz-transition: all 0.2s ease-out;
@@ -525,6 +578,136 @@ body{
             }
         }
     }
+
+    // Our service Page 
+
+    .ourServices{
+        padding-top: 80px;
+        .banner{
+            padding: 50px 70px;
+            @include padding-shared();
+            .container-fluid{
+                .row{
+                    h1{
+                        font-size: 3.5rem;
+                        font-family: Futura Bold Font;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .designProcess{
+        // padding-top: 30px;
+        .headings{
+            padding: 20px 70px;
+            @include padding-shared;
+            .sectionMainHeading{
+                @include sectionMainHeading();
+                font-weight: 800;
+            }
+        }
+        .processSteps{
+            .container-fluid{
+                background-color: #000000;
+                // margin-top: 20px;
+                padding: 0px 70px;
+                @include padding-shared;
+                // padding: 40px 40px;
+                padding-bottom: 80px;
+                .row{
+                    color: white;
+                    .stepNo{
+                        margin-bottom: 40px;
+                        h2{
+                            background-color: white;
+                            display: inline-block;
+                            color: black;
+                            padding: 25px 40px;
+                            font-family: Futura Heavy Font;
+                            font-size: medium;
+                        }
+                    }
+                    .left{
+                        h1{
+                            font-family: Futura Bold Font;
+                            font-size: 3rem;
+                        }
+                        h4{
+                            color: #6f6f6f;
+                        }
+                    }
+                    .mid{
+                        h1{
+                            font-family: Futura Bold Font;
+                            font-size: 3rem;
+                        }
+                        ul{
+                            color: #6f6f6f;
+                        }
+                    }
+                    .right{
+                        text-align: center;
+                        img{
+                            // width: 100%;
+                            height: 300px;
+                        }
+                    }
+                }
+                .stepsCards{
+                    div{
+                        .cardd{
+                            padding: 5px;
+                            .cardIn{
+                                color: white;
+                                text-align: center !important;
+                                background-color: #1d1d1d;
+                                border-radius: 15px;
+                                padding-top: 20px;
+                                -webkit-transition: all 0.3s ease-out;
+                                -moz-transition: all 0.3s ease-out;
+                                -o-transition: all 0.3s ease-out;
+                                -webkit-transition: all 0.3s ease-in;
+                                -moz-transition: all 0.3s ease-in;
+                                -o-transition: all 0.3s ease-in;
+                                font-family: Futura Heavy Font;
+                                img{
+                                    width: 40%;
+                                }
+                                &:hover{
+                                    background: rgb(42,67,248);
+                                    background: radial-gradient(circle, rgba(42,67,248,1) 0%, rgba(29,29,29,1) 91%);
+                                }
+                            }
+                            .active{
+                                background-color: #2a43f8 !important;
+                                color: white;
+                                text-align: center !important;
+                                background-color: #1d1d1d;
+                                border-radius: 15px;
+                                padding-top: 20px;
+                                -webkit-transition: all 0.3s ease-out;
+                                -moz-transition: all 0.3s ease-out;
+                                -o-transition: all 0.3s ease-out;
+                                -webkit-transition: all 0.3s ease-in;
+                                -moz-transition: all 0.3s ease-in;
+                                -o-transition: all 0.3s ease-in;
+                                font-family: Futura Heavy Font;
+                                img{
+                                    width: 40%;
+                                }
+                                &:hover{
+                                    background-color: #2a43f8 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Our service Page 
 }
 
 
@@ -591,6 +774,11 @@ body{
             .container-fluid{
                 @include padding-shared-992;
             }
+            .navbar-collapse{
+                background-color: #ffffff;
+                margin-top: 20px;
+                border: 1px solid $main-blue-color
+            }
         }
     }
     .hero{
@@ -598,21 +786,34 @@ body{
         .carousel{
             @include padding-shared-992;
         }
+        .heroCompanies{
+            font-size: xx-large;
+        }
     }
     .services{
         @include padding-shared-992
     }
     .testimonials{
         @include padding-shared-992;
+        .sectionMainHeading{
+            @include sectionMainHeadingMedium();
+        }
     }
     .hot{
         @include padding-shared-992
     }
     .achievements{
-        @include padding-shared-992
+        @include padding-shared-992;
+        .sectionMainHeading{
+            @include sectionMainHeadingMedium();
+            font-weight: 800;
+        }
     }
     .work{
-        @include padding-shared-992
+        @include padding-shared-992;
+        .sectionMainHeading{
+            @include sectionMainHeadingMedium();
+        }
     }
     .contact{
         @include padding-shared-992
