@@ -308,6 +308,19 @@ body{
         }
         .slider{
             margin-top: 50px;
+            .swipe{
+                text-align: center;
+                font-size: large;
+                margin-top: 25px;
+                .fa-angle-double-left{
+                    margin-right: 10px;
+                    animation: move 3s infinite;
+
+                }
+                .fa-angle-double-right{
+                    margin-left: 10px;
+                }
+            }
             div{
                 .singleWork{
                     margin: 5px 5px;
@@ -385,8 +398,8 @@ body{
                 background-color: black;
                 border-radius: 20px;
                 padding-bottom: 30px;
-                padding-top: 20px;
                 .left{
+                    // padding-top: 20px;
                     color: white;
                     padding-left: 50px;
                     font-size: xx-large;

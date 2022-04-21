@@ -158,6 +158,9 @@ function Work(){
                     </Tilt>
                     </div>
                 </Slider>
+                <div className="swipe pulse-Infinite">
+                    <i class="fas fa-angle-double-left"></i>Swipe Left & Right<i class="fas fa-angle-double-right"></i>
+                </div>
             </div>
         </div>
     );

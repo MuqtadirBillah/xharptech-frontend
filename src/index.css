@@ -299,6 +299,22 @@ body .work .slider {
   margin-top: 50px;
 }
 
+body .work .slider .swipe {
+  text-align: center;
+  font-size: large;
+  margin-top: 25px;
+}
+
+body .work .slider .swipe .fa-angle-double-left {
+  margin-right: 10px;
+  -webkit-animation: move 3s infinite;
+          animation: move 3s infinite;
+}
+
+body .work .slider .swipe .fa-angle-double-right {
+  margin-left: 10px;
+}
+
 body .work .slider div .singleWork {
   margin: 5px 5px;
   padding: 30px 20px;
@@ -375,7 +391,6 @@ body .contact .container-fluid .banner {
   background-color: black;
   border-radius: 20px;
   padding-bottom: 30px;
-  padding-top: 20px;
 }
 
 body .contact .container-fluid .banner .left {
