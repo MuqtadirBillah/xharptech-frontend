@@ -40,6 +40,10 @@ $poster-color-d5: #EDFBFF;
     font-family: Futura Heavy Font;
     font-size: 3rem !important;
 }
+@mixin sectionMainHeadingSmall() {
+    font-family: Futura Heavy Font;
+    font-size: 2rem !important;
+}
 @mixin padding-shared() {
     padding-left: 70px;
     padding-right: 70px;
@@ -52,10 +56,15 @@ $poster-color-d5: #EDFBFF;
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
+@mixin padding-shared-768() {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
 // Functions 
 
 body{
     font-family: Futura Light Font;
+    font-size: x-large;
     .navigation{
         position: fixed;
         // display: none;
@@ -600,7 +609,8 @@ body{
     .designProcess{
         // padding-top: 30px;
         .headings{
-            padding: 20px 70px;
+            padding: 50px 70px;
+            background-color: rgb(243, 243, 243);
             @include padding-shared;
             .sectionMainHeading{
                 @include sectionMainHeading();
@@ -706,6 +716,94 @@ body{
             }
         }
     }
+    .serviceSection{
+        padding: 50px 70px;
+        @include padding-shared;
+        h5{
+            font-weight: 700;
+        }
+        .h1Num{
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: Futura Heavy Font;
+        }
+        h3{
+
+        }
+        .sectionMainHeading{
+            @include sectionMainHeading();
+            font-family: Futura Heavy Font;
+            font-weight: 800;
+        }
+    }
+    .servicesMain{
+        margin-top: 100px;
+        .container-fluid{
+            hr{
+                background-color: $main-blue-color;
+                margin-bottom: 100px;
+            }
+            .row{
+                .left-main{
+                    img{
+                        width: 80%;
+                    }
+                }
+                .right-main{
+                    .serviceSingleHeading{
+                        font-family: Futura Heavy Font !important;
+                        margin-top: 40px;
+                    }
+                    p{
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .singleService{
+        .row{
+            border-top: 2px solid rgba(0, 0, 0, 0.6);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .left{
+                h2{
+                    font-family: Futura Bold Font !important;
+                }
+            }
+            .mid{
+                text-align: right;
+                img{
+                    height: 200px;
+                    visibility: hidden;
+                    max-width: 100%;
+                }
+            }
+            .right{
+                text-align: right !important;
+                h1{
+                    text-align: right;
+                }
+            }
+            &:hover{
+                .left{
+                    h2{
+                        color: $main-blue-color;
+                    }
+                }
+                .mid{
+                    img{
+                        visibility: visible;
+                    }
+                }
+                .right{
+                    h1{
+                        color: $main-blue-color;
+                    }
+                }
+            }
+        }
+    }
 
     // Our service Page 
 }
@@ -764,6 +862,10 @@ body{
     }
     .footer{
         @include padding-shared-1200
+    }
+    .serviceSection{
+        padding: 50px 70px;
+        @include padding-shared-1200();
     }
 
 }
@@ -824,6 +926,33 @@ body{
     .footer{
         @include padding-shared-992
     }
+    .designProcess{
+        .headings{
+            @include padding-shared-992();
+            padding: 5px !important;
+        }
+        .processSteps{
+            .container-fluid{
+                @include padding-shared-992();
+                padding: 5px !important;
+            }
+        }
+    }
+    .serviceSection{
+        padding: 50px 70px;
+        @include padding-shared-992();
+    }
+    .ourServices{
+        padding-top: 80px;
+        .banner{
+            @include padding-shared-992();
+        }
+    }
+    .serviceSection{
+        .sectionMainHeading{
+            @include sectionMainHeadingMedium();
+        }
+    }
 
 }
 @media only screen and (max-width: 768px) {
@@ -878,6 +1007,17 @@ body{
         }
     }
     
+    .serviceSection{
+        padding: 50px 70px;
+        @include padding-shared-768();
+    }
+    .serviceSection{
+        .sectionMainHeading{
+            padding: 50px 70px;
+            @include padding-shared-768();
+            @include sectionMainHeadingSmall();
+        }
+    }
     .footer{
         .container-fluid{
             .row{

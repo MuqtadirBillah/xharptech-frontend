@@ -25,7 +25,7 @@ function DesignProcess(){
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 5.5,
         slidesToScroll: 3,
         initialSlide: 0,
         responsive: [

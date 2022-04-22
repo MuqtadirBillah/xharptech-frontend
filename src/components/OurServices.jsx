@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
 import DesignProcess from "./DesignProcess";
+import ServiceSection from "./ServiceSection";
 import Contact from "./Contact";
 import ContactEmail from "./ContactEmail";
 
@@ -26,6 +27,7 @@ function OurServices(){
                     </div>
                 </div>
                 <DesignProcess />
+                <ServiceSection />
                 <Contact />
                 <ContactEmail />
             </div>

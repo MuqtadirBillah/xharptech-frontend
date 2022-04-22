@@ -27,9 +27,9 @@ function Work(){
     
     var settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 4.2,
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [

@@ -18,6 +18,7 @@
 
 body {
   font-family: Futura Light Font;
+  font-size: x-large;
 }
 
 body .navigation {
@@ -575,7 +576,8 @@ body .ourServices .banner .container-fluid .row h1 {
 }
 
 body .designProcess .headings {
-  padding: 20px 70px;
+  padding: 50px 70px;
+  background-color: #f3f3f3;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -689,6 +691,90 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .activ
   background-color: #2a43f8 !important;
 }
 
+body .serviceSection {
+  padding: 50px 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+body .serviceSection h5 {
+  font-weight: 700;
+}
+
+body .serviceSection .h1Num {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: Futura Heavy Font;
+}
+
+body .serviceSection .sectionMainHeading {
+  font-family: Futura Heavy Font;
+  font-size: 4rem;
+  font-family: Futura Heavy Font;
+  font-weight: 800;
+}
+
+body .servicesMain {
+  margin-top: 100px;
+}
+
+body .servicesMain .container-fluid hr {
+  background-color: #00C2FF;
+  margin-bottom: 100px;
+}
+
+body .servicesMain .container-fluid .row .left-main img {
+  width: 80%;
+}
+
+body .servicesMain .container-fluid .row .right-main .serviceSingleHeading {
+  font-family: Futura Heavy Font !important;
+  margin-top: 40px;
+}
+
+body .servicesMain .container-fluid .row .right-main p {
+  margin-bottom: 50px;
+}
+
+body .singleService .row {
+  border-top: 2px solid rgba(0, 0, 0, 0.6);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+body .singleService .row .left h2 {
+  font-family: Futura Bold Font !important;
+}
+
+body .singleService .row .mid {
+  text-align: right;
+}
+
+body .singleService .row .mid img {
+  height: 200px;
+  visibility: hidden;
+}
+
+body .singleService .row .right {
+  text-align: right !important;
+}
+
+body .singleService .row .right h1 {
+  text-align: right;
+}
+
+body .singleService .row:hover .left h2 {
+  color: #00C2FF;
+}
+
+body .singleService .row:hover .mid img {
+  visibility: visible;
+}
+
+body .singleService .row:hover .right h1 {
+  color: #00C2FF;
+}
+
 @media only screen and (max-width: 1200px) {
   .navigation .navbar .container-fluid {
     padding-left: 20px !important;
@@ -769,7 +855,7 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .activ
   }
   .testimonials .sectionMainHeading {
     font-family: Futura Heavy Font;
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
   .hot {
     padding-left: 10px !important;
@@ -781,7 +867,7 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .activ
   }
   .achievements .sectionMainHeading {
     font-family: Futura Heavy Font;
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     font-weight: 800;
   }
   .work {
@@ -790,7 +876,7 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .activ
   }
   .work .sectionMainHeading {
     font-family: Futura Heavy Font;
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
   .contact {
     padding-left: 10px !important;
@@ -803,6 +889,17 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .activ
   .footer {
     padding-left: 10px !important;
     padding-right: 10px !important;
+  }
+  .ourServices {
+    padding-top: 80px;
+  }
+  .ourServices .banner {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .serviceSection .sectionMainHeading {
+    font-family: Futura Heavy Font;
+    font-size: 2rem !important;
   }
 }
 
