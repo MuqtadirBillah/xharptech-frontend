@@ -306,6 +306,9 @@ function DesignProcess(){
                                 </div>
                             </div>
                         </Slider>
+                        <div className="swipe">
+                            <h3 className=" pulse-Infinite"><i class="fas fa-angle-double-left"></i> Swipe Left & Right <i class="fas fa-angle-double-right"></i></h3>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -21,6 +21,12 @@ body {
   font-size: x-large;
 }
 
+body .sectionMainHeading {
+  font-family: Futura Heavy Font;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
 body .navigation {
   position: fixed;
   z-index: 100;
@@ -52,13 +58,13 @@ body .navigation .navbar .container-fluid .navbar-collapse ul li {
 }
 
 body .navigation .navbar .container-fluid .navbar-collapse ul li a {
-  color: #00C2FF;
+  color: black;
   font-weight: 600;
   font-family: Futura Bold Font;
 }
 
 body .navigation .navbar .container-fluid .navbar-collapse ul li a:hover {
-  color: black;
+  color: #00C2FF;
 }
 
 body .hero {
@@ -492,7 +498,7 @@ body .contactEmail {
 }
 
 body .contactEmail .container-fluid .row .left img {
-  max-width: 100%;
+  max-width: 60%;
 }
 
 body .contactEmail .container-fluid .row .right h1 {
@@ -596,7 +602,7 @@ body .designProcess .processSteps .container-fluid {
   padding: 0px 70px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 body .designProcess .processSteps .container-fluid .row {
@@ -644,6 +650,10 @@ body .designProcess .processSteps .container-fluid .row .right img {
   height: 300px;
 }
 
+body .designProcess .processSteps .container-fluid .stepsCards {
+  margin-top: 50px;
+}
+
 body .designProcess .processSteps .container-fluid .stepsCards div .cardd {
   padding: 5px;
 }
@@ -660,7 +670,12 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .cardI
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
-  font-family: Futura Heavy Font;
+  font-family: Futura Bold Font;
+  min-height: 240px;
+}
+
+body .designProcess .processSteps .container-fluid .stepsCards div .cardd .cardIn h3 {
+  font-size: 1.5rem !important;
 }
 
 body .designProcess .processSteps .container-fluid .stepsCards div .cardd .cardIn img {
@@ -685,7 +700,12 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .activ
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
-  font-family: Futura Heavy Font;
+  font-family: Futura Bold Font;
+  min-height: 240px;
+}
+
+body .designProcess .processSteps .container-fluid .stepsCards div .cardd .active h3 {
+  font-size: 1.5rem !important;
 }
 
 body .designProcess .processSteps .container-fluid .stepsCards div .cardd .active img {
@@ -694,6 +714,12 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .activ
 
 body .designProcess .processSteps .container-fluid .stepsCards div .cardd .active:hover {
   background-color: #2a43f8 !important;
+}
+
+body .designProcess .processSteps .container-fluid .stepsCards .swipe {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
 }
 
 body .serviceSection {
@@ -880,6 +906,120 @@ body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard:hov
   color: #00C2FF;
 }
 
+body .about {
+  padding-top: 40px;
+}
+
+body .about .banner {
+  padding: 100px 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+body .about .banner h1 {
+  font-size: 3.5rem;
+  font-family: Futura Bold Font;
+  color: white;
+}
+
+body .about .aboutMain {
+  padding: 50px 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+body .about .aboutMain h5 {
+  font-weight: 700;
+}
+
+body .about .aboutMain .sectionMainHeading {
+  font-family: Futura Heavy Font;
+  font-size: 4rem;
+  font-family: Futura Heavy Font;
+  font-weight: 800;
+}
+
+body .about .aboutMain .container-fluid .row h3 {
+  margin-top: 40px;
+}
+
+body .about .aboutMain .container-fluid .parallaxRow {
+  margin-top: 50px;
+}
+
+body .about .aboutMain .container-fluid .parallaxRow .parallaxIn {
+  min-height: 300px;
+  color: white;
+  padding: 30px 20px;
+}
+
+body .about .aboutMain .container-fluid .parallaxRow .parallaxIn .sectionMainHeading {
+  font-family: Futura Heavy Font;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+body .about .aboutMain .container-fluid .team {
+  margin-top: 100px;
+}
+
+body .about .aboutMain .container-fluid .team .row .memberCard {
+  margin-top: 100px;
+}
+
+body .about .aboutMain .container-fluid .team .row .memberCard .cardHeader {
+  text-align: center;
+}
+
+body .about .aboutMain .container-fluid .team .row .memberCard .cardHeader img {
+  width: 50%;
+}
+
+body .about .aboutMain .container-fluid .team .row .memberCard .cardBody {
+  text-align: center;
+  padding-top: 30px;
+}
+
+body .about .aboutMain .container-fluid .team .row .memberCard .cardBody h2 {
+  font-family: Futura Bold Font;
+  line-height: 0;
+}
+
+body .about .aboutMain .container-fluid .team .row .memberCard .cardBody h3 {
+  line-height: 0;
+}
+
+body .feedback {
+  padding: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+body .feedback .container-fluid .feedbackRow {
+  margin-top: 50px;
+}
+
+body .feedback .container-fluid .feedbackRow h5 {
+  font-size: larger;
+}
+
+body .feedback .container-fluid .feedbackRow .info h5 {
+  font-family: Futura Bold Font;
+  margin-top: 40px;
+}
+
+body .feedback .container-fluid .feedbackRow .carouselControlClass .carouselControl {
+  background-color: #00C2FF !important;
+  border: 0;
+  margin-left: 10px;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+}
+
+body .feedback .container-fluid .feedbackRow .carouselControlClass .carouselControl:hover {
+  color: white;
+}
+
 @media only screen and (max-width: 1200px) {
   .navigation .navbar .container-fluid {
     padding-left: 20px !important;
@@ -1010,6 +1150,9 @@ body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard:hov
     padding-right: 10px !important;
     padding: 5px !important;
   }
+  .designProcess .stepsCards {
+    padding-bottom: 50px;
+  }
   .serviceSection {
     padding: 50px 70px;
     padding-left: 10px !important;
@@ -1055,6 +1198,31 @@ body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard:hov
     padding-right: 10px !important;
   }
   .workPage .workMain {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .about {
+    padding-top: 40px;
+  }
+  .about .banner {
+    padding: 50px 70px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .aboutMain {
+    padding: 50px 70px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .aboutMain h5 {
+    font-weight: 700;
+  }
+  .aboutMain .sectionMainHeading {
+    font-family: Futura Heavy Font;
+    font-size: 3rem !important;
+  }
+  .feedback {
+    padding: 60px;
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
