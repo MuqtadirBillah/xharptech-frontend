@@ -611,15 +611,19 @@ body{
         .headings{
             padding: 50px 70px;
             background-color: rgb(243, 243, 243);
-            @include padding-shared;
+            // @include padding-shared;
             .sectionMainHeading{
                 @include sectionMainHeading();
                 font-weight: 800;
             }
         }
         .processSteps{
+            .slick-arrow{
+                display: none !important;
+            }
             .container-fluid{
                 background-color: #000000;
+                max-width: 100%;
                 // margin-top: 20px;
                 padding: 0px 70px;
                 @include padding-shared;
@@ -627,6 +631,8 @@ body{
                 padding-bottom: 80px;
                 .row{
                     color: white;
+                    padding: 0 !important;
+                    width: 100%;
                     .stepNo{
                         margin-bottom: 40px;
                         h2{
@@ -657,9 +663,8 @@ body{
                         }
                     }
                     .right{
-                        text-align: center;
+                            text-align: center;
                         img{
-                            // width: 100%;
                             height: 300px;
                         }
                     }
@@ -783,6 +788,10 @@ body{
                 text-align: right !important;
                 h1{
                     text-align: right;
+                    width: 100%;
+                    a{
+                        color: black;
+                    }
                 }
             }
             &:hover{
@@ -793,7 +802,7 @@ body{
                 }
                 .mid{
                     img{
-                        visibility: visible;
+                        visibility: visible !important;
                     }
                 }
                 .right{
@@ -804,8 +813,95 @@ body{
             }
         }
     }
-
     // Our service Page 
+
+    // Work Page 
+    .workPage{
+        padding-top: 40px;
+        .banner{
+            padding: 50px 70px;
+            @include padding-shared();
+            .container-fluid{
+                .row{
+                    h1{
+                        font-size: 3.5rem;
+                        font-family: Futura Bold Font;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .workMain{
+            padding: 50px 70px;
+            @include padding-shared;
+            h5{
+                font-weight: 700;
+            }
+            .sectionMainHeading{
+                @include sectionMainHeading();
+                font-family: Futura Heavy Font;
+                font-weight: 800;
+            }
+            .workShowcase{
+                .container-fluid{
+                    .row{
+                        padding: 0 !important;
+                        .coll{
+                            padding: 0 !important;
+                            .workCard{
+                                -webkit-transition: all 0.5s ease-out;
+                                -moz-transition: all 0.5s ease-out;
+                                -o-transition: all 0.5s ease-out;
+                                -webkit-transition: all 0.5s ease-in;
+                                -moz-transition: all 0.5s ease-in;
+                                -o-transition: all 0.5s ease-in;
+                                padding: 10px;
+                                cursor: pointer;
+                                margin-top: 20px;
+                                background-color: white;
+                                .cardHeader{
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                .cardBody{
+                                    -webkit-transition: all 0.5s ease-out;
+                                    -moz-transition: all 0.5s ease-out;
+                                    -o-transition: all 0.5s ease-out;
+                                    -webkit-transition: all 0.5s ease-in;
+                                    -moz-transition: all 0.5s ease-in;
+                                    -o-transition: all 0.5s ease-in;
+                                    h2{
+                                        margin-top: 20px;
+                                        font-family: Futura Bold Font;
+                                    }
+                                }
+                                &:hover{
+                                    // border: 0;
+                                    transform: scale(1.05);
+                                    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
+                                    .cardHeader{
+                                        img{
+                                            filter: contrast(1.5);
+                                        }
+                                    }
+                                    .cardBody{
+                                        padding: 10px 2%;
+                                        h2{
+                                            margin-top: 20px;
+                                            font-family: Futura Bold Font;
+                                            color: $main-blue-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Work Page 
 }
 
 
@@ -953,6 +1049,46 @@ body{
             @include sectionMainHeadingMedium();
         }
     }
+    .singleService{
+        
+        .row{
+            border-top: 2px solid rgba(0, 0, 0, 0.6);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .left{
+                h2{
+                    font-family: Futura Bold Font !important;
+                }
+            }
+            .mid{
+                // background-color: red;
+                text-align: center;
+                img{
+                    height: 200px;
+                    visibility: visible !important;
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+            .right{
+                text-align: right !important;
+                h1{
+                    text-align: center !important;
+                    width: 100%;
+                    i{
+                    }
+                }
+            }
+        }
+    }
+    .workPage{
+        .banner{
+            @include padding-shared-992;
+        }
+        .workMain{
+            @include padding-shared-992();
+        }
+    }
 
 }
 @media only screen and (max-width: 768px) {
@@ -1016,6 +1152,17 @@ body{
             padding: 50px 70px;
             @include padding-shared-768();
             @include sectionMainHeadingSmall();
+        }
+    }
+    .singleService{
+        .row{
+            .left{
+            }
+            .mid{
+                img{
+                    visibility: visible;
+                }
+            }
         }
     }
     .footer{

@@ -578,8 +578,6 @@ body .ourServices .banner .container-fluid .row h1 {
 body .designProcess .headings {
   padding: 50px 70px;
   background-color: #f3f3f3;
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 body .designProcess .headings .sectionMainHeading {
@@ -588,8 +586,13 @@ body .designProcess .headings .sectionMainHeading {
   font-weight: 800;
 }
 
+body .designProcess .processSteps .slick-arrow {
+  display: none !important;
+}
+
 body .designProcess .processSteps .container-fluid {
   background-color: #000000;
+  max-width: 100%;
   padding: 0px 70px;
   padding-left: 70px;
   padding-right: 70px;
@@ -598,6 +601,8 @@ body .designProcess .processSteps .container-fluid {
 
 body .designProcess .processSteps .container-fluid .row {
   color: white;
+  padding: 0 !important;
+  width: 100%;
 }
 
 body .designProcess .processSteps .container-fluid .row .stepNo {
@@ -753,6 +758,7 @@ body .singleService .row .mid {
 body .singleService .row .mid img {
   height: 200px;
   visibility: hidden;
+  max-width: 100%;
 }
 
 body .singleService .row .right {
@@ -761,6 +767,11 @@ body .singleService .row .right {
 
 body .singleService .row .right h1 {
   text-align: right;
+  width: 100%;
+}
+
+body .singleService .row .right h1 a {
+  color: black;
 }
 
 body .singleService .row:hover .left h2 {
@@ -768,10 +779,104 @@ body .singleService .row:hover .left h2 {
 }
 
 body .singleService .row:hover .mid img {
-  visibility: visible;
+  visibility: visible !important;
 }
 
 body .singleService .row:hover .right h1 {
+  color: #00C2FF;
+}
+
+body .workPage {
+  padding-top: 40px;
+}
+
+body .workPage .banner {
+  padding: 50px 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+body .workPage .banner .container-fluid .row h1 {
+  font-size: 3.5rem;
+  font-family: Futura Bold Font;
+  color: white;
+}
+
+body .workPage .workMain {
+  padding: 50px 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+body .workPage .workMain h5 {
+  font-weight: 700;
+}
+
+body .workPage .workMain .sectionMainHeading {
+  font-family: Futura Heavy Font;
+  font-size: 4rem;
+  font-family: Futura Heavy Font;
+  font-weight: 800;
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row {
+  padding: 0 !important;
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row .coll {
+  padding: 0 !important;
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: white;
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard .cardHeader img {
+  width: 100%;
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard .cardBody {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard .cardBody h2 {
+  margin-top: 20px;
+  font-family: Futura Bold Font;
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard:hover .cardHeader img {
+  -webkit-filter: contrast(1.5);
+          filter: contrast(1.5);
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard:hover .cardBody {
+  padding: 10px 2%;
+}
+
+body .workPage .workMain .workShowcase .container-fluid .row .coll .workCard:hover .cardBody h2 {
+  margin-top: 20px;
+  font-family: Futura Bold Font;
   color: #00C2FF;
 }
 
@@ -823,6 +928,11 @@ body .singleService .row:hover .right h1 {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+  .serviceSection {
+    padding: 50px 70px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -855,7 +965,7 @@ body .singleService .row:hover .right h1 {
   }
   .testimonials .sectionMainHeading {
     font-family: Futura Heavy Font;
-    font-size: 2rem !important;
+    font-size: 3rem !important;
   }
   .hot {
     padding-left: 10px !important;
@@ -867,7 +977,7 @@ body .singleService .row:hover .right h1 {
   }
   .achievements .sectionMainHeading {
     font-family: Futura Heavy Font;
-    font-size: 2rem !important;
+    font-size: 3rem !important;
     font-weight: 800;
   }
   .work {
@@ -876,7 +986,7 @@ body .singleService .row:hover .right h1 {
   }
   .work .sectionMainHeading {
     font-family: Futura Heavy Font;
-    font-size: 2rem !important;
+    font-size: 3rem !important;
   }
   .contact {
     padding-left: 10px !important;
@@ -890,6 +1000,21 @@ body .singleService .row:hover .right h1 {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
+  .designProcess .headings {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding: 5px !important;
+  }
+  .designProcess .processSteps .container-fluid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding: 5px !important;
+  }
+  .serviceSection {
+    padding: 50px 70px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
   .ourServices {
     padding-top: 80px;
   }
@@ -899,7 +1024,39 @@ body .singleService .row:hover .right h1 {
   }
   .serviceSection .sectionMainHeading {
     font-family: Futura Heavy Font;
-    font-size: 2rem !important;
+    font-size: 3rem !important;
+  }
+  .singleService .row {
+    border-top: 2px solid rgba(0, 0, 0, 0.6);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .singleService .row .left h2 {
+    font-family: Futura Bold Font !important;
+  }
+  .singleService .row .mid {
+    text-align: center;
+  }
+  .singleService .row .mid img {
+    height: 200px;
+    visibility: visible !important;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .singleService .row .right {
+    text-align: right !important;
+  }
+  .singleService .row .right h1 {
+    text-align: center !important;
+    width: 100%;
+  }
+  .workPage .banner {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .workPage .workMain {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 
@@ -926,6 +1083,21 @@ body .singleService .row:hover .right h1 {
   .contactEmail .container-fluid .row .left img {
     width: 50%;
     margin-bottom: 20px;
+  }
+  .serviceSection {
+    padding: 50px 70px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .serviceSection .sectionMainHeading {
+    padding: 50px 70px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    font-family: Futura Heavy Font;
+    font-size: 2rem !important;
+  }
+  .singleService .row .mid img {
+    visibility: visible;
   }
   .footer .container-fluid .row .right {
     -webkit-box-pack: start !important;

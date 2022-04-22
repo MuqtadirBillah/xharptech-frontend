@@ -15,13 +15,13 @@ function Navigation(){
                                 <a className="nav-link" aria-current="page" href="/services">OUR SERVICES</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">WORK</a>
+                                <a className="nav-link" href="/work">WORK</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">ABOUT</a>
+                                <a className="nav-link" href="/about">ABOUT</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">CONTACT</a>
+                                <a className="nav-link" href="/about">CONTACT</a>
                             </li>
                         </ul>
                     </div>
