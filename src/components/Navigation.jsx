@@ -21,7 +21,7 @@ function Navigation(){
                                 <a className="nav-link" href="/about">ABOUT</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/about">CONTACT</a>
+                                <a className="nav-link" href="/contact">CONTACT</a>
                             </li>
                         </ul>
                     </div>

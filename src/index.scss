@@ -670,6 +670,7 @@ body{
                             text-align: center;
                         img{
                             height: 300px;
+                            max-width: 100%;
                         }
                     }
                 }
@@ -691,7 +692,7 @@ body{
                                 -moz-transition: all 0.3s ease-in;
                                 -o-transition: all 0.3s ease-in;
                                 font-family: Futura Bold Font;
-                                min-height: 240px;
+                                min-height: 220px;
                                 h3{
                                     font-size: 1.5rem !important;
                                 }
@@ -717,7 +718,7 @@ body{
                                 -moz-transition: all 0.3s ease-in;
                                 -o-transition: all 0.3s ease-in;
                                 font-family: Futura Bold Font;
-                                min-height: 240px;
+                                min-height: 220px;
                                 h3{
                                     font-size: 1.5rem !important;
                                 }
@@ -1024,6 +1025,107 @@ body{
         }
     }
     // About Page 
+
+    // Contact Page 
+    .contactPage{
+        padding-top: 40px;
+        .banner{
+            padding: 100px 70px;
+            @include padding-shared();
+            h1{
+                font-size: 3.5rem;
+                font-family: Futura Bold Font;
+                color: white;
+            }
+        }
+        .contactMain{
+            padding: 50px 70px;
+            @include padding-shared();
+            .contactForm{
+                margin-bottom: 50px;
+                .form{
+                    border: 1px solid black;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    .container-fluid{
+                        .contactHeading{
+                            font-family: Futura Heavy Font;
+                            hr{
+                            }
+                        }
+                        .row{
+                            label{
+                                font-family: Futura Bold Font;
+                                // margin-top: 30px;
+                                margin-bottom: 5px;
+                                .impStar{
+                                    color: red;
+                                }
+                            }
+                            input, textarea{
+                                width: 100%;
+                                padding: 5px 10px;
+                                margin-bottom: 20px;
+                            }
+                            button{
+                                background-color: $main-blue-color;
+                                color: white;
+                                padding: 10px 20px;
+                                border: 2px solid rgba(0, 0, 0, 0);
+                                -webkit-transition: all 0.5s ease-out;
+                                -moz-transition: all 0.5s ease-out;
+                                -o-transition: all 0.5s ease-out;
+                                -webkit-transition: all 0.5s ease-in;
+                                -moz-transition: all 0.5s ease-in;
+                                -o-transition: all 0.5s ease-in;
+                                &:hover{
+                                    background-color: white;
+                                    border: 2px solid $main-blue-color;
+                                    color: $main-blue-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contactInfo{
+                border: 1px solid black;
+                padding: 10px;
+                h1{
+                    font-family: Futura Bold Font;
+                }
+                .country{
+                    font-family: Futura Bold Font;
+                    margin-top: 30px;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+                .location{
+                    margin-top: 20px;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+                .phone{
+                    margin-top: 20px;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+                .countryIcon{
+                    color: #0080ff;
+                }
+                .locationIcon{
+                    color: #0015ff;
+                }
+                .phoneIcon{
+                    color: #00a60e;
+                }
+            }
+        }
+    }
+    // Contact Page 
 }
 
 
@@ -1234,6 +1336,14 @@ body{
     .feedback{
         padding: 60px;
         @include padding-shared-992();
+    }
+    .contactPage{
+        .banner{
+            @include padding-shared-992();
+        }
+        .contactMain{
+            @include padding-shared-992();
+        }
     }
 
 }

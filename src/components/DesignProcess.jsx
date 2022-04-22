@@ -229,7 +229,7 @@ function DesignProcess(){
                     <div className="stepsCards">
                         <Slider {...settings}>
                             <div>
-                                <div className="cardd">
+                                <div className="cardd d-flex align-items-center">
                                     <div className={''+kick} onClick={()=>{kickfn()}}>
                                         <h5>STAGE 1</h5>
                                         <h3>kick-off</h3>
@@ -240,7 +240,7 @@ function DesignProcess(){
                                 </div>
                             </div>
                             <div>
-                                <div className="cardd">
+                                <div className="cardd d-flex align-items-center">
                                     <div className={''+research} onClick={()=>{researchfn()}}>
                                         <h5>STAGE 2</h5>
                                         <h3>research</h3>
@@ -251,7 +251,7 @@ function DesignProcess(){
                                 </div>
                             </div>
                             <div>
-                                <div className="cardd">
+                                <div className="cardd d-flex align-items-center">
                                     <div className={''+ideation} onClick={()=>{ideationfn()}}>
                                         <h5>STAGE 3</h5>
                                         <h3>ideation</h3>
@@ -262,7 +262,7 @@ function DesignProcess(){
                                 </div>
                             </div>
                             <div>
-                                <div className="cardd">
+                                <div className="cardd d-flex align-items-center">
                                     <div className={''+testing} onClick={()=>{testingfn()}}>
                                         <h5>STAGE 4</h5>
                                         <h3>testing & validation</h3>
@@ -273,7 +273,7 @@ function DesignProcess(){
                                 </div>
                             </div>
                             <div>
-                                <div className="cardd">
+                                <div className="cardd d-flex align-items-center">
                                     <div className={''+design} onClick={()=>{designfn()}}>
                                         <h5>STAGE 5</h5>
                                         <h3>design</h3>
@@ -284,7 +284,7 @@ function DesignProcess(){
                                 </div>
                             </div>
                             <div>
-                                <div className="cardd">
+                                <div className="cardd d-flex align-items-center">
                                     <div className={''+implementt} onClick={()=>{implementtfn()}}>
                                         <h5>STAGE 6</h5>
                                         <h3>implement</h3>
@@ -295,7 +295,7 @@ function DesignProcess(){
                                 </div>
                             </div>
                             <div>
-                                <div className="cardd">
+                                <div className="cardd d-flex align-items-center">
                                     <div className={''+improve} onClick={()=>{improvefn()}}>
                                         <h5>STAGE 7</h5>
                                         <h3>improve</h3>
@@ -307,7 +307,7 @@ function DesignProcess(){
                             </div>
                         </Slider>
                         <div className="swipe">
-                            <h3 className=" pulse-Infinite"><i class="fas fa-angle-double-left"></i> Swipe Left & Right <i class="fas fa-angle-double-right"></i></h3>
+                            <h5 className=" pulse-Infinite"><i class="fas fa-angle-double-left"></i> Swipe Left & Right <i class="fas fa-angle-double-right"></i></h5>
                         </div>
                     </div>
                 </div>

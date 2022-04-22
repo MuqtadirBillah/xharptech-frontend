@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import OurServices from "./components/OurServices";
 import WorkPage from "./components/WorkPage";
 import About from "./components/About";
+import ContactPage from "./components/ContactPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route  path="/services" exact element={<OurServices />} />
           <Route  path="/work" exact element={<WorkPage />} />
           <Route  path="/about" exact element={<About />} />
+          <Route  path="/contact" exact element={<ContactPage />} />
           {/* <Route  path="*" exact element={<PageNotFound />} /> */}
         </Routes>
       </Router>

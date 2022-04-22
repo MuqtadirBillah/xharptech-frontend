@@ -648,6 +648,7 @@ body .designProcess .processSteps .container-fluid .row .right {
 
 body .designProcess .processSteps .container-fluid .row .right img {
   height: 300px;
+  max-width: 100%;
 }
 
 body .designProcess .processSteps .container-fluid .stepsCards {
@@ -671,7 +672,7 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .cardI
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   font-family: Futura Bold Font;
-  min-height: 240px;
+  min-height: 220px;
 }
 
 body .designProcess .processSteps .container-fluid .stepsCards div .cardd .cardIn h3 {
@@ -701,7 +702,7 @@ body .designProcess .processSteps .container-fluid .stepsCards div .cardd .activ
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   font-family: Futura Bold Font;
-  min-height: 240px;
+  min-height: 220px;
 }
 
 body .designProcess .processSteps .container-fluid .stepsCards div .cardd .active h3 {
@@ -1020,6 +1021,122 @@ body .feedback .container-fluid .feedbackRow .carouselControlClass .carouselCont
   color: white;
 }
 
+body .contactPage {
+  padding-top: 40px;
+}
+
+body .contactPage .banner {
+  padding: 100px 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+body .contactPage .banner h1 {
+  font-size: 3.5rem;
+  font-family: Futura Bold Font;
+  color: white;
+}
+
+body .contactPage .contactMain {
+  padding: 50px 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+body .contactPage .contactMain .contactForm {
+  margin-bottom: 50px;
+}
+
+body .contactPage .contactMain .contactForm .form {
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body .contactPage .contactMain .contactForm .form .container-fluid .contactHeading {
+  font-family: Futura Heavy Font;
+}
+
+body .contactPage .contactMain .contactForm .form .container-fluid .row label {
+  font-family: Futura Bold Font;
+  margin-bottom: 5px;
+}
+
+body .contactPage .contactMain .contactForm .form .container-fluid .row label .impStar {
+  color: red;
+}
+
+body .contactPage .contactMain .contactForm .form .container-fluid .row input, body .contactPage .contactMain .contactForm .form .container-fluid .row textarea {
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+body .contactPage .contactMain .contactForm .form .container-fluid .row button {
+  background-color: #00C2FF;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+body .contactPage .contactMain .contactForm .form .container-fluid .row button:hover {
+  background-color: white;
+  border: 2px solid #00C2FF;
+  color: #00C2FF;
+}
+
+body .contactPage .contactMain .contactInfo {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+body .contactPage .contactMain .contactInfo h1 {
+  font-family: Futura Bold Font;
+}
+
+body .contactPage .contactMain .contactInfo .country {
+  font-family: Futura Bold Font;
+  margin-top: 30px;
+}
+
+body .contactPage .contactMain .contactInfo .country i {
+  margin-right: 10px;
+}
+
+body .contactPage .contactMain .contactInfo .location {
+  margin-top: 20px;
+}
+
+body .contactPage .contactMain .contactInfo .location i {
+  margin-right: 10px;
+}
+
+body .contactPage .contactMain .contactInfo .phone {
+  margin-top: 20px;
+}
+
+body .contactPage .contactMain .contactInfo .phone i {
+  margin-right: 10px;
+}
+
+body .contactPage .contactMain .contactInfo .countryIcon {
+  color: #0080ff;
+}
+
+body .contactPage .contactMain .contactInfo .locationIcon {
+  color: #0015ff;
+}
+
+body .contactPage .contactMain .contactInfo .phoneIcon {
+  color: #00a60e;
+}
+
 @media only screen and (max-width: 1200px) {
   .navigation .navbar .container-fluid {
     padding-left: 20px !important;
@@ -1223,6 +1340,14 @@ body .feedback .container-fluid .feedbackRow .carouselControlClass .carouselCont
   }
   .feedback {
     padding: 60px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .contactPage .banner {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .contactPage .contactMain {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
