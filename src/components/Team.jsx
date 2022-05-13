@@ -5,7 +5,7 @@ function Team(){
         <div className="team">
             <h1 className="sectionMainHeading">Founders</h1>
             <div className="row">
-                <div className="col-lg-4 col-md-4 col-sm-12">
+                <div className="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in"  data-aos-delay="80" data-aos-duration="800">
                     <div className="memberCard">
                         <div className="cardHeader">
                             <img src="/assets/images/team-icon.png" alt="" />
@@ -16,7 +16,7 @@ function Team(){
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-12">
+                <div className="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in"  data-aos-delay="80" data-aos-duration="800">
                     <div className="memberCard">
                         <div className="cardHeader">
                             <img src="/assets/images/team-icon.png" alt="" />
@@ -27,7 +27,7 @@ function Team(){
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-12">
+                <div className="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in"  data-aos-delay="80" data-aos-duration="800">
                     <div className="memberCard">
                         <div className="cardHeader">
                             <img src="/assets/images/team-icon.png" alt="" />

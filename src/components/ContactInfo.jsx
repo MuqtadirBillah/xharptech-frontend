@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactInfo(){
     return(
-        <div className="contactInfo">
+        <div className="contactInfo" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800">
             <h1>Contact Information</h1>
             <p>Have questions? Contact us and have your questions answered</p>
             <h3 className="country"><i class="fas fa-map-marked-alt countryIcon"></i> Pakistan</h3>

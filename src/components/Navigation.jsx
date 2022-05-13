@@ -24,6 +24,7 @@ function Navigation(){
                                 <a className="nav-link" href="/contact">CONTACT</a>
                             </li>
                         </ul>
+                        <button className="contactButNav">Contact us</button>
                     </div>
                 </div>
             </nav>

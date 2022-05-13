@@ -9,7 +9,7 @@ import Footer from "./Footer";
 function ContactPage(){
     
     var bannerStyle = {
-        backgroundImage: `url("/assets/images/pencil-banner.jpg")`,
+        backgroundImage: `url("/assets/images/banner-back.jpg")`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat'
     }
@@ -19,7 +19,7 @@ function ContactPage(){
             <Navigation />
             <div className="contactPage">
                 <div className="banner" style={bannerStyle}>
-                    <h1>Contact</h1>
+                    <h1 data-aos="fade-down" data-aos-delay="80" data-aos-duration="800">Contact</h1>
                 </div>
                 <div className="contactMain">
                     <div className="container-fluid">

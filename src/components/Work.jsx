@@ -30,14 +30,14 @@ function Work(){
         infinite: true,
         speed: 500,
         slidesToShow: 4.2,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         initialSlide: 0,
         responsive: [
         {
             breakpoint: 1280,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 1,
+                slidesToScroll: 2,
                 infinite: true,
                 dots: true
             }
@@ -45,8 +45,8 @@ function Work(){
         {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
+              slidesToShow: 2.2,
+              slidesToScroll: 2,
               infinite: true,
               dots: true
             }
@@ -83,79 +83,79 @@ function Work(){
 
     return(
         <div className="work">
-            <h5>OUR WORK</h5>
-            <h1 className="sectionMainHeading">Just look at it!</h1>
+            <h5 data-aos="fade-down" data-aos-delay="80" data-aos-duration="800">OUR WORK</h5>
+            <h1 className="sectionMainHeading" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800">Just look at it!</h1>
             <div className="slider">
                 <Slider {...settings}>
-                    <div>
-                    <Tilt className="Tilt" options={tiltOptions}>
-                        <div className="singleWork" style={workOnebackStyle}>
-                            <div className="no">
-                                <div><span className="lineIn">---</span> 01</div>
+                    <div data-aos="flip-right" data-aos-delay="110" data-aos-duration="800">
+                        <Tilt className="Tilt" options={tiltOptions}>
+                            <div className="singleWork" style={workOnebackStyle}>
+                                <div className="no">
+                                    <div><span className="lineIn">---</span> 01</div>
+                                </div>
+                                <div className="credit">
+                                    <p>Shinuya, Japan</p>
+                                    <h1>Photo by Benjamin Hung</h1>
+                                    <button className="slideInUp">View in Unsplash</button>
+                                </div>
                             </div>
-                            <div className="credit">
-                                <p>Shinuya, Japan</p>
-                                <h1>Photo by Benjamin Hung</h1>
-                                <button className="slideInUp">View in Unsplash</button>
-                            </div>
-                        </div>
-                    </Tilt>
+                        </Tilt>
                     </div>
-                    <div>
-                    <Tilt className="Tilt" options={tiltOptions}>
-                        <div className="singleWork" style={workOnebackStyle2}>
-                            <div className="no">
-                                <div><span className="lineIn">---</span> 02</div>
+                    <div data-aos="flip-right" data-aos-delay="110" data-aos-duration="800">
+                        <Tilt className="Tilt" options={tiltOptions}>
+                            <div className="singleWork" style={workOnebackStyle2}>
+                                <div className="no">
+                                    <div><span className="lineIn">---</span> 02</div>
+                                </div>
+                                <div className="credit">
+                                    <p>Shinuya, Japan</p>
+                                    <h1>Photo by Benjamin Hung</h1>
+                                    <button className="slideInUp">View in Unsplash</button>
+                                </div>
                             </div>
-                            <div className="credit">
-                                <p>Shinuya, Japan</p>
-                                <h1>Photo by Benjamin Hung</h1>
-                                <button className="slideInUp">View in Unsplash</button>
-                            </div>
-                        </div>
-                    </Tilt>
+                        </Tilt>
                     </div>
-                    <div>
-                    <Tilt className="Tilt" options={tiltOptions}>
-                        <div className="singleWork" style={workOnebackStyle3}>
-                            <div className="no">
-                                <div><span className="lineIn">---</span> 03</div>
+                    <div data-aos="flip-right" data-aos-delay="110" data-aos-duration="800">
+                        <Tilt className="Tilt" options={tiltOptions}>
+                            <div className="singleWork" style={workOnebackStyle3}>
+                                <div className="no">
+                                    <div><span className="lineIn">---</span> 03</div>
+                                </div>
+                                <div className="credit">
+                                    <p>Shinuya, Japan</p>
+                                    <h1>Photo by Benjamin Hung</h1>
+                                    <button className="slideInUp">View in Unsplash</button>
+                                </div>
                             </div>
-                            <div className="credit">
-                                <p>Shinuya, Japan</p>
-                                <h1>Photo by Benjamin Hung</h1>
-                                <button className="slideInUp">View in Unsplash</button>
-                            </div>
-                        </div>
-                    </Tilt>
+                        </Tilt>
                     </div>
-                    <div>
-                    <Tilt className="Tilt" options={tiltOptions}>
-                        <div className="singleWork" style={workOnebackStyle4}>
-                            <div className="no">
-                                <div><span className="lineIn">---</span> 04</div>
+                    <div data-aos="flip-right" data-aos-delay="110" data-aos-duration="800">
+                        <Tilt className="Tilt" options={tiltOptions}>
+                            <div className="singleWork" style={workOnebackStyle4}>
+                                <div className="no">
+                                    <div><span className="lineIn">---</span> 04</div>
+                                </div>
+                                <div className="credit">
+                                    <p>Shinuya, Japan</p>
+                                    <h1>Photo by Benjamin Hung</h1>
+                                    <button className="slideInUp">View in Unsplash</button>
+                                </div>
                             </div>
-                            <div className="credit">
-                                <p>Shinuya, Japan</p>
-                                <h1>Photo by Benjamin Hung</h1>
-                                <button className="slideInUp">View in Unsplash</button>
-                            </div>
-                        </div>
-                    </Tilt>
+                        </Tilt>
                     </div>
-                    <div>
-                    <Tilt className="Tilt" options={tiltOptions}>
-                        <div className="singleWork" style={workOnebackStyle}>
-                            <div className="no">
-                                <div><span className="lineIn">---</span> 05</div>
+                    <div data-aos="flip-right" data-aos-delay="110" data-aos-duration="800">
+                        <Tilt className="Tilt" options={tiltOptions}>
+                            <div className="singleWork" style={workOnebackStyle}>
+                                <div className="no">
+                                    <div><span className="lineIn">---</span> 05</div>
+                                </div>
+                                <div className="credit">
+                                    <p>Shinuya, Japan</p>
+                                    <h1>Photo by Benjamin Hung</h1>
+                                    <button className="slideInUp">View in Unsplash</button>
+                                </div>
                             </div>
-                            <div className="credit">
-                                <p>Shinuya, Japan</p>
-                                <h1>Photo by Benjamin Hung</h1>
-                                <button className="slideInUp">View in Unsplash</button>
-                            </div>
-                        </div>
-                    </Tilt>
+                        </Tilt>
                     </div>
                 </Slider>
                 <div className="swipe pulse-Infinite">

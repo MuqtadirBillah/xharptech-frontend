@@ -3,7 +3,7 @@ import React from "react";
 function ContactForm(){
     return(
         <div className="contactForm">
-            <div className="form">
+            <div className="form" data-aos="flip-up" data-aos-delay="80" data-aos-duration="800">
                 <div className="container-fluid">
                     <h1 className="contactHeading">Contact Us<hr /></h1>
                     <div className="row">

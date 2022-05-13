@@ -8,7 +8,7 @@ import ContactEmail from "./ContactEmail";
 function OurServices(){
 
     var bannerStyle = {
-        backgroundImage: `url("/assets/images/pencil-banner.jpg")`,
+        backgroundImage: `url("/assets/images/banner-back.jpg")`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat'
     }
@@ -26,7 +26,7 @@ function OurServices(){
                         </div>
                     </div>
                 </div>
-                <DesignProcess />
+                {/* <DesignProcess /> */}
                 <ServiceSection />
                 <Contact />
                 <ContactEmail />

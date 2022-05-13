@@ -2,9 +2,13 @@ import React from 'react';
 import Navigation from './Navigation';
 import Hero from './Hero';
 import Services from './Services';
+import Companies from './Companies';
 import Testimonials from './Testimonials';
+import TestimonialsUpdated from './TestimonialsUpdated';
 import Hot from './Hot';
 import Achievements from './Achievemnents';
+import BecomeBanner from './BecomeBanner';
+import OurPortfolio from './OurPortfolio';
 import Work from './Work';
 import Contact from './Contact';
 import ContactEmail from './ContactEmail';
@@ -17,11 +21,15 @@ function Home(){
             <div className="home">
                 <Hero />
                 <Services />
-                <Testimonials />
-                <Hot />
+                {/* <Companies /> */}
+                {/* <Testimonials />
+                <Hot /> */}
                 <Achievements />
-                <Work />
-                <Contact />
+                <TestimonialsUpdated />
+                <BecomeBanner />
+                <OurPortfolio />
+                {/* <Work /> */}
+                {/* <Contact /> */}
                 <ContactEmail />
                 <Footer />
             </div>

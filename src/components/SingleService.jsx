@@ -9,12 +9,12 @@ function SingleService(props){
                     <p>{props.subText}</p>
                 </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 mid">
+            <div className="col-lg-8 col-md-8 col-sm-12 mid">
                 <img src={props.img} />
             </div>
-            <div className="col-lg-2 col-md-2 col-sm-12 right d-flex align-items-center">
+            {/* <div className="col-lg-2 col-md-2 col-sm-12 right d-flex align-items-center">
                 <h1><a href={props.link}><i class="fas fa-arrow-right"></i></a></h1>
-            </div>
+            </div> */}
         </div>
     );
 }
