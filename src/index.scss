@@ -769,6 +769,7 @@ body{
                     font-size: large;
                 }
                 .left{
+                    margin-bottom: 30px;
                     img{
                        height: 50px; 
                     }
@@ -791,9 +792,11 @@ body{
                     }
                 }
                 .mid{
+                    margin-bottom: 50px;
 
                 }
                 .right{
+                    margin-bottom: 50px;
                     h1{
                         font-family: 'montserrat';
                         font-weight: 600;
@@ -829,7 +832,7 @@ body{
             }
             .bottom{
                 hr{
-                    margin-top: 30px;
+                    margin-top: 10px;
                     margin-bottom: 20px;
                 }
                 .left{
@@ -1693,40 +1696,6 @@ body{
             }
         }
     }
-    .footer{
-        .container-fluid{
-            .row{
-                .left{
-                    img{
-                        
-                    }
-                    h5{
-                        
-                    }
-                }
-                .right{
-                    justify-content: flex-start !important;
-                    padding-left: 0 !important;
-                    ul{
-                        margin-left: 0 !important;
-                        padding-left: 10px !important;
-                        margin: 0 auto !important;
-                        li{
-                            display: inline-block;
-                            padding-left: 0 !important;
-                            text-align: center;
-                            margin-bottom: 10px;
-                            margin-top: 20px !important;
-                            a{
-                                font-weight: 400;
-                                font-size: x-large !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 @media only screen and (max-width: 576px) {
 
@@ -1849,6 +1818,181 @@ body{
             }
         }
 
+    }
+    .contactEmail{
+        // background-color: $poster-color-d4;
+        // padding: 50px 70px;
+        // @include padding-shared;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .container{
+            .row{
+                .left{
+                    text-align: center !important;
+                    img{
+                        // height: 80%;
+                        max-width: 60%;
+                    }
+                }
+                .right{
+                    h1{
+                        font-size: 3rem;
+                        font-weight: 700;
+                        font-family: 'montserrat';
+                    }
+                    h2{
+                        font-size: xx-large;
+                        margin-top: 30px;
+                    }
+                    h4{
+                        margin-top: 25px;
+                    }
+                    .emailInput{
+                        padding: 5px;
+                        border: 1px solid rgba(61, 61, 61, 0.4);
+                        border-radius: 30px !important;
+                        display: inline-block;
+                        margin-top: 20px;
+                        input{
+                            background-color: rgba(0, 0, 0, 0);
+                            border: 0;
+                            padding: 5px 15px !important;
+                        }
+                        button{
+                            background-color: $main-blue-color;
+                            padding: 5px 30px !important;
+                            border: 0;
+                            border-radius: 50px;
+                            color: white;
+                            font-size: larger;
+                            // margin-left: 50px;
+                            -webkit-transition: all 0.2s ease-out;
+                            -moz-transition: all 0.2s ease-out;
+                            -o-transition: all 0.2s ease-out;
+                            -webkit-transition: all 0.2s ease-in;
+                            -moz-transition: all 0.2s ease-in;
+                            -o-transition: all 0.2s ease-in;
+                            &:hover{
+                                background-color: $main-blue-color;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .bottom{
+            .left{
+                text-align: center !important;
+            }
+            .right{
+                text-align: center !important;
+                ul{
+                    list-style: none;
+                    li{
+                        display: block !important;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 366px) {
+
+    .contactEmail{
+        // background-color: $poster-color-d4;
+        // padding: 50px 70px;
+        // @include padding-shared;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .container{
+            .row{
+                .left{
+                    text-align: center !important;
+                    img{
+                        // height: 80%;
+                        max-width: 60%;
+                    }
+                }
+                .right{
+                    h1{
+                        font-size: 3rem;
+                        font-weight: 700;
+                        font-family: 'montserrat';
+                    }
+                    h2{
+                        font-size: xx-large;
+                        margin-top: 30px;
+                    }
+                    h4{
+                        margin-top: 25px;
+                    }
+                    .emailInput{
+                        padding: 5px;
+                        border: 1px solid rgba(61, 61, 61, 0.4);
+                        border-radius: 30px !important;
+                        display: inline-block;
+                        margin-top: 20px;
+                        input{
+                            background-color: rgba(0, 0, 0, 0);
+                            border: 0;
+                            padding: 5px 5px !important;
+                        }
+                        button{
+                            background-color: $main-blue-color;
+                            padding: 5px 30px !important;
+                            border: 0;
+                            border-radius: 50px;
+                            color: white;
+                            font-size: larger;
+                            // margin-left: 50px;
+                            -webkit-transition: all 0.2s ease-out;
+                            -moz-transition: all 0.2s ease-out;
+                            -o-transition: all 0.2s ease-out;
+                            -webkit-transition: all 0.2s ease-in;
+                            -moz-transition: all 0.2s ease-in;
+                            -o-transition: all 0.2s ease-in;
+                            &:hover{
+                                background-color: $main-blue-color;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .bottom{
+            .left{
+                text-align: center !important;
+            }
+            .right{
+                text-align: center !important;
+                ul{
+                    list-style: none;
+                    li{
+                        display: block !important;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
