@@ -5,16 +5,46 @@ function Hero(){
         <div className="hero">
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="slide">
+                    <div className="carousel-item active align-self-center">
+                        <div className="slide d-block w-100">
                             <div className="container">
                                 <div className="row">
-                                    <div className="col-lg-4 col-md-4 col-sm-12 left align-self-center">
+                                    <div className="col-lg-6 col-md-6 col-sm-12 left align-self-center">
                                         <h1>We Develop the<br /><span className="highText">Visual Identity</span><br />of Your Business</h1>
                                         <button>BOOK A MEETING</button>
                                     </div>
-                                    <div className="col-lg-8 col-md-8 col-sm-12 right">
-                                        <img src="/assets/images/comp.png" alt="hero-image" />
+                                    <div className="col-lg-6 col-md-6 col-sm-12 right">
+                                        <img src="/assets/images/home-slider-1.png" alt="hero-image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="carousel-item align-self-center">
+                        <div className="slide d-block w-100">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-6 col-sm-12 left align-self-center">
+                                        <h1>Serving Technology<br />Better Through insightful<br /><span className="highText">Design, UX & Strategy</span><br />of Your Business</h1>
+                                        <button>BOOK A MEETING</button>
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-12 right">
+                                        <img src="/assets/images/home-slider-2.png" alt="hero-image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="carousel-item align-self-center">
+                        <div className="slide d-block w-100">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-6 col-sm-12 left align-self-center">
+                                        <h1>Designers With<br /><span className="highText">GLOBAL PORTFOLIO</span></h1>
+                                        <button>BOOK A MEETING</button>
+                                    </div>
+                                    <div className="col-lg-6 col-md-6 col-sm-12 right">
+                                        <img src="/assets/images/home-slider-3.png" alt="hero-image" />
                                     </div>
                                 </div>
                             </div>

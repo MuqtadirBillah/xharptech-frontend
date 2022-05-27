@@ -22,6 +22,10 @@ body {
   font-size: 20px;
 }
 
+body input:focus, body select:focus, body button:focus, body textArea:focus {
+  outline: none !important;
+}
+
 body .sectionMainHeading {
   font-family: Futura Heavy Font;
   font-size: 3.5rem;
@@ -49,6 +53,10 @@ body .navigation .navbar .container-fluid .navbar-brand img {
   height: 35px;
 }
 
+body .navigation .navbar .container-fluid .navbar-toggler:focus {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
 body .navigation .navbar .container-fluid .navbar-collapse ul {
   margin: auto;
 }
@@ -60,7 +68,7 @@ body .navigation .navbar .container-fluid .navbar-collapse ul li {
 
 body .navigation .navbar .container-fluid .navbar-collapse ul li a {
   color: black;
-  font-family: Futura Bold Font;
+  font-family: 'montserrat';
 }
 
 body .navigation .navbar .container-fluid .navbar-collapse ul li a:hover {
@@ -87,6 +95,10 @@ body .hero .carousel {
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 80px;
+}
+
+body .hero .carousel .carousel-inner .carousel-item {
+  min-height: 400px;
 }
 
 body .hero .carousel .carousel-inner .carousel-item .slide .container .row .left h1 {
@@ -128,7 +140,7 @@ body .hero .carousel .carousel-inner .carousel-item .slide .container .row .righ
 }
 
 body .hero .carousel .carousel-inner .carousel-item .slide .container .row .right img {
-  width: 50%;
+  width: 60%;
 }
 
 body .heroCompanies {
@@ -283,38 +295,60 @@ body .testimonials .testimonial .userInfo .line2 p {
 
 body .testimonialsUpdated {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 body .testimonialsUpdated .updatedSectionMainHeading {
   color: #00C2FF;
   font-family: Futura Heavy Font;
+  text-align: center !important;
 }
 
-body .testimonialsUpdated .whatHeading h1 {
-  font-family: Futura Light Font;
-  font-size: 3.5rem;
-}
-
-body .testimonialsUpdated .whatHeading .whatRight {
+body .testimonialsUpdated .whatHeading {
+  position: relative;
   text-align: center;
 }
 
-body .testimonialsUpdated .whatHeading .whatRight button {
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #00C2FF;
-  border-radius: 5px;
+body .testimonialsUpdated .whatHeading h1 {
+  font-family: 'montserrat';
+  font-size: xxx-large;
+}
+
+body .testimonialsUpdated .whatHeading .whatRight {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 80px;
+  text-align: right;
+  width: auto;
+}
+
+body .testimonialsUpdated .whatHeading .whatRight .sliderControlBut {
+  border: 0;
   color: #00C2FF;
-  font-size: large;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: xx-large;
   font-family: Futura Bold Font;
-  padding: 10px 40px;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
 
-body .testimonialsUpdated .whatHeading .whatRight button:hover {
-  color: white;
-  background-color: #00C2FF;
+body .testimonialsUpdated .whatHeading .whatRightPhone {
+  display: none;
+}
+
+body .testimonialsUpdated .whatHeading .whatRightPhone .sliderControlBut {
+  border: 0;
+  color: #00C2FF;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: xx-large;
+  font-family: Futura Bold Font;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+body .testimonialsUpdated .reviews {
+  margin-top: 30px;
 }
 
 body .testimonialsUpdated .reviews .singleCard .reviewCard {
@@ -394,6 +428,190 @@ body .ourPortfolio .tiless img {
 body .ourPortfolio .tiless h3 {
   margin-top: 20px;
   font-family: Futura Bold Font;
+}
+
+body .ourPortfolioPage {
+  padding-bottom: 50px;
+  padding-top: 0 !important;
+  background-color: white;
+}
+
+body .ourPortfolioPage .portfolioHero {
+  padding-top: 0px;
+}
+
+body .ourPortfolioPage .portfolioHero .updatedSectionMainHeading {
+  text-align: left;
+}
+
+body .ourPortfolioPage .updatedSectionMainHeading {
+  color: #00C2FF;
+  font-family: Futura Heavy Font;
+  text-align: center;
+  margin-top: 80px;
+}
+
+body .ourPortfolioPage .ourHeading {
+  text-align: center;
+  margin-bottom: 50PX;
+}
+
+body .ourPortfolioPage .ourHeading h1 {
+  font-family: Futura Light Font;
+  font-size: 3.5rem;
+}
+
+body .ourPortfolioPage .tiless {
+  margin-top: 0px;
+}
+
+body .ourPortfolioPage .tiless .row {
+  margin-bottom: 30px;
+}
+
+body .ourPortfolioPage .tiless .row img {
+  width: 100%;
+}
+
+body .ourPortfolioPage .tiless .row h3 {
+  margin-top: 20px;
+  font-family: Futura Bold Font;
+}
+
+body .aboutPage .updatedSectionMainHeading {
+  color: #00C2FF;
+  font-family: Futura Heavy Font;
+  text-align: left;
+  margin-top: 80px;
+}
+
+body .aboutPage .aboutInfo {
+  padding-top: 50px;
+}
+
+body .aboutPage .aboutInfo h1 {
+  font-family: 'montserrat';
+  font-weight: 600;
+}
+
+body .aboutPage .aboutInfo .imageDiv img {
+  width: 100%;
+}
+
+body .aboutHero {
+  padding-top: 120px !important;
+  background-color: #ECFAFF;
+}
+
+body .aboutHero .carousel {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 80px;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left .updatedSectionMainHeading {
+  text-align: left !important;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-family: Futura light Font;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left .highText {
+  color: #00C2FF;
+  font-family: Futura Bold Font;
+  font-size: 70px;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left button {
+  background-color: #00C2FF;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: x-large;
+  margin-top: 20px;
+  color: white;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left button:hover {
+  background-color: white;
+  border: 2px solid #00C2FF;
+  color: #00C2FF;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .right {
+  text-align: center;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .right img {
+  width: 50%;
+}
+
+body .aboutHero {
+  padding-top: 0px;
+  background-color: #ECFAFF;
+}
+
+body .aboutHero .carousel {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 80px;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left .updatedSectionMainHeading {
+  text-align: left !important;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-family: Futura light Font;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left .highText {
+  color: #00C2FF;
+  font-family: Futura Bold Font;
+  font-size: 70px;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left button {
+  background-color: #00C2FF;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: x-large;
+  margin-top: 20px;
+  color: white;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .left button:hover {
+  background-color: white;
+  border: 2px solid #00C2FF;
+  color: #00C2FF;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .right {
+  text-align: center;
+}
+
+body .aboutHero .carousel .carousel-inner .carousel-item .slide .container .row .right img {
+  width: 50%;
 }
 
 body .becomeBanner {
@@ -865,6 +1083,67 @@ body .ourServices .banner .container-fluid .row h1 {
   color: white;
 }
 
+body .servicesPageUpdated .mainContent {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+body .servicesPageUpdated .mainContent .updatedSectionMainHeading {
+  color: #00C2FF;
+  font-family: Futura Heavy Font;
+  text-align: center !important;
+}
+
+body .servicesPageUpdated .mainContent h1 {
+  font-family: 'montserrat';
+}
+
+body .servicesPageUpdated .mainContent .services hr {
+  background-color: #00C2FF;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+body .servicesPageUpdated .mainContent .services .row .serviceImg {
+  text-align: center;
+}
+
+body .servicesPageUpdated .mainContent .services .row .serviceImg img {
+  height: 100%;
+  width: 100%;
+}
+
+body .servicesPageUpdated .mainContent .services .row .serviceText {
+  text-align: left;
+}
+
+body .servicesPageUpdated .mainContent .services .row .serviceText h2 {
+  font-family: 'montserrat';
+}
+
+body .servicesPageUpdated .mainContent .services .row .serviceText h5 {
+  font-size: x-large;
+}
+
+body .servicesPageUpdated .mainContent .services .row .serviceText ul {
+  font-size: xx-large;
+}
+
+body .servicesHero .carousel-inner .carousel-item .slide .container .row .left .highText {
+  color: #00C2FF;
+  font-family: Futura Bold Font;
+  font-size: xx-large !important;
+}
+
+body .servicesHero .carousel-inner .carousel-item .slide .container .row .left button {
+  margin-top: 20px;
+}
+
+body .servicesHero .carousel-inner .carousel-item .slide .container .row .right img {
+  width: 60% !important;
+}
+
 body .designProcess .headings {
   padding: 50px 70px;
   background-color: #f3f3f3;
@@ -1245,34 +1524,43 @@ body .about .aboutMain .container-fluid .parallaxRow .parallaxIn .sectionMainHea
   font-weight: 800;
 }
 
-body .about .aboutMain .container-fluid .team {
-  margin-top: 100px;
+body .team .container-fluid {
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
-body .about .aboutMain .container-fluid .team .row .memberCard {
-  margin-top: 100px;
-}
-
-body .about .aboutMain .container-fluid .team .row .memberCard .cardHeader {
+body .team .container-fluid .sectionMainHeading {
   text-align: center;
 }
 
-body .about .aboutMain .container-fluid .team .row .memberCard .cardHeader img {
-  width: 50%;
+body .team .container-fluid .in {
+  position: relative;
 }
 
-body .about .aboutMain .container-fluid .team .row .memberCard .cardBody {
-  text-align: center;
-  padding-top: 30px;
+body .team .container-fluid .in .backShape {
+  position: absolute;
+  background-color: #00C2FF;
+  height: 100px;
+  width: 100%;
+  z-index: -100;
 }
 
-body .about .aboutMain .container-fluid .team .row .memberCard .cardBody h2 {
-  font-family: Futura Bold Font;
-  line-height: 0;
+body .team .container-fluid .in .members {
+  padding-top: 80px;
+  background-color: white;
 }
 
-body .about .aboutMain .container-fluid .team .row .memberCard .cardBody h3 {
-  line-height: 0;
+body .team .container-fluid .in .members h3 {
+  font-family: 'montserrat';
+  font-weight: 500;
+}
+
+body .team .container-fluid .in .members h5 {
+  font-family: 'montserrat';
+}
+
+body .team .container-fluid .in .members img {
+  height: 100%;
 }
 
 body .feedback {
@@ -1306,118 +1594,83 @@ body .feedback .container-fluid .feedbackRow .carouselControlClass .carouselCont
   color: white;
 }
 
-body .contactPage {
-  padding-top: 40px;
+body .contactPage .container-fluid .row {
+  background-color: #DEE7FF;
 }
 
-body .contactPage .banner {
-  padding: 100px 70px;
-  padding-left: 70px;
-  padding-right: 70px;
+body .contactPage .container-fluid .row .left {
+  min-height: 100vh;
+  padding: 5%;
+  background-color: #DEE7FF;
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 
-body .contactPage .banner h1 {
-  font-size: 3.5rem;
-  font-family: Futura Bold Font;
-  color: white;
+body .contactPage .container-fluid .row .left .container .contactForm h1 {
+  font-family: 'montserrat';
 }
 
-body .contactPage .contactMain {
-  padding: 50px 70px;
-  padding-left: 70px;
-  padding-right: 70px;
+body .contactPage .container-fluid .row .left .container .contactForm .innerForm {
+  padding-top: 50px;
 }
 
-body .contactPage .contactMain .contactForm {
-  margin-bottom: 50px;
-}
-
-body .contactPage .contactMain .contactForm .form {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-body .contactPage .contactMain .contactForm .form .container-fluid .contactHeading {
-  font-family: Futura Heavy Font;
-}
-
-body .contactPage .contactMain .contactForm .form .container-fluid .row label {
-  font-family: Futura Bold Font;
-  margin-bottom: 5px;
-}
-
-body .contactPage .contactMain .contactForm .form .container-fluid .row label .impStar {
-  color: red;
-}
-
-body .contactPage .contactMain .contactForm .form .container-fluid .row input, body .contactPage .contactMain .contactForm .form .container-fluid .row textarea {
+body .contactPage .container-fluid .row .left .container .contactForm .innerForm input {
   width: 100%;
-  padding: 5px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: 0;
 }
 
-body .contactPage .contactMain .contactForm .form .container-fluid .row button {
+body .contactPage .container-fluid .row .left .container .contactForm .innerForm textArea {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding: 20px 25px;
+  border: 0;
+}
+
+body .contactPage .container-fluid .row .left .container .contactForm .innerForm button {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding: 15px 10px;
+  border: 0;
   background-color: #00C2FF;
+  font-size: large;
+  font-family: 'montserrat';
   color: white;
-  padding: 10px 20px;
-  border: 2px solid rgba(0, 0, 0, 0);
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
 }
 
-body .contactPage .contactMain .contactForm .form .container-fluid .row button:hover {
+body .contactPage .container-fluid .row .right {
+  padding: 5%;
+  min-height: 100vh;
+  padding-top: 140px;
+  padding-bottom: 100px;
   background-color: white;
-  border: 2px solid #00C2FF;
+}
+
+body .contactPage .container-fluid .row .right .container .up {
+  text-align: center;
+}
+
+body .contactPage .container-fluid .row .right .container .up img {
+  width: 100%;
+}
+
+body .contactPage .container-fluid .row .right .container .down {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+body .contactPage .container-fluid .row .right .container .down .row {
+  margin-top: 20px;
+  background-color: white;
+}
+
+body .contactPage .container-fluid .row .right .container .down .row h3 i {
   color: #00C2FF;
-}
-
-body .contactPage .contactMain .contactInfo {
-  padding: 10px;
-}
-
-body .contactPage .contactMain .contactInfo h1 {
-  font-family: Futura Bold Font;
-}
-
-body .contactPage .contactMain .contactInfo .country {
-  font-family: Futura Bold Font;
-  margin-top: 30px;
-}
-
-body .contactPage .contactMain .contactInfo .country i {
-  margin-right: 10px;
-}
-
-body .contactPage .contactMain .contactInfo .location {
-  margin-top: 20px;
-}
-
-body .contactPage .contactMain .contactInfo .location i {
-  margin-right: 10px;
-}
-
-body .contactPage .contactMain .contactInfo .phone {
-  margin-top: 20px;
-}
-
-body .contactPage .contactMain .contactInfo .phone i {
-  margin-right: 10px;
-}
-
-body .contactPage .contactMain .contactInfo .countryIcon {
-  color: #0080ff;
-}
-
-body .contactPage .contactMain .contactInfo .locationIcon {
-  color: #0015ff;
-}
-
-body .contactPage .contactMain .contactInfo .phoneIcon {
-  color: #00a60e;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1596,6 +1849,46 @@ body .contactPage .contactMain .contactInfo .phoneIcon {
     text-align: center !important;
     width: 100%;
   }
+  .team .container-fluid {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .team .container-fluid .sectionMainHeading {
+    text-align: center;
+  }
+  .team .container-fluid .in {
+    text-align: center;
+    position: relative;
+  }
+  .team .container-fluid .in .backShape {
+    position: absolute;
+    background-color: #00C2FF;
+    height: 100px;
+    width: 100%;
+    z-index: -100;
+  }
+  .team .container-fluid .in .members {
+    padding-top: 80px;
+    background-color: white;
+    text-align: center !important;
+  }
+  .team .container-fluid .in .members h3 {
+    font-family: 'montserrat';
+    font-weight: 500;
+    text-align: center !important;
+  }
+  .team .container-fluid .in .members h5 {
+    font-family: 'montserrat';
+    text-align: center !important;
+  }
+  .team .container-fluid .in .members p {
+    text-align: center !important;
+    margin-bottom: 50px;
+  }
+  .team .container-fluid .in .members img {
+    height: 100%;
+    margin-bottom: 30px;
+  }
   .workPage .banner {
     padding-left: 10px !important;
     padding-right: 10px !important;
@@ -1677,6 +1970,73 @@ body .contactPage .contactMain .contactInfo .phoneIcon {
   .singleService .row .mid img {
     visibility: visible;
   }
+  .testimonialsUpdated {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .testimonialsUpdated .updatedSectionMainHeading {
+    color: #00C2FF;
+    font-family: Futura Heavy Font;
+  }
+  .testimonialsUpdated .whatHeading {
+    position: relative;
+    text-align: center;
+  }
+  .testimonialsUpdated .whatHeading h1 {
+    font-family: 'montserrat';
+    font-size: xxx-large;
+  }
+  .testimonialsUpdated .whatHeading .whatRight {
+    position: static !important;
+    text-align: center !important;
+    display: none;
+  }
+  .testimonialsUpdated .whatHeading .whatRight .sliderControlBut {
+    border: 0;
+    color: #00C2FF;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: xx-large;
+    font-family: Futura Bold Font;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+  }
+  .testimonialsUpdated .whatHeading .whatRightPhone {
+    display: block !important;
+  }
+  .testimonialsUpdated .whatHeading .whatRightPhone .sliderControlBut {
+    border: 0;
+    color: #00C2FF;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: xx-large;
+    font-family: Futura Bold Font;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+  }
+  .testimonialsUpdated .reviews .singleCard .reviewCard {
+    background-color: #E4F8FF;
+    padding: 20px 40px;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0 !important;
+  }
+  .testimonialsUpdated .reviews .singleCard .reviewCard .rating .ratingNo {
+    font-size: larger;
+    margin-right: 10px;
+    font-family: Futura Bold Font;
+  }
+  .testimonialsUpdated .reviews .singleCard .reviewCard .rating .filled {
+    color: #FFBB55;
+  }
+  .testimonialsUpdated .reviews .singleCard .reviewCard .comments p {
+    font-size: larger;
+    color: #887E7E;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .testimonialsUpdated .reviews .singleCard .reviewCard .client img {
+    width: 100%;
+    border-radius: 50%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1719,27 +2079,39 @@ body .contactPage .contactMain .contactInfo .phoneIcon {
     color: #00C2FF;
     font-family: Futura Heavy Font;
   }
-  .testimonialsUpdated .whatHeading h1 {
-    font-family: Futura Light Font;
-    font-size: 3.5rem;
-  }
-  .testimonialsUpdated .whatHeading .whatRight {
+  .testimonialsUpdated .whatHeading {
+    position: relative;
     text-align: center;
   }
-  .testimonialsUpdated .whatHeading .whatRight button {
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid #00C2FF;
-    border-radius: 5px;
+  .testimonialsUpdated .whatHeading h1 {
+    font-family: 'montserrat';
+    font-size: xxx-large;
+  }
+  .testimonialsUpdated .whatHeading .whatRight {
+    position: static !important;
+    text-align: center !important;
+    display: none;
+  }
+  .testimonialsUpdated .whatHeading .whatRight .sliderControlBut {
+    border: 0;
     color: #00C2FF;
-    font-size: large;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: xx-large;
     font-family: Futura Bold Font;
-    padding: 10px 40px;
     -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
   }
-  .testimonialsUpdated .whatHeading .whatRight button:hover {
-    color: white;
-    background-color: #00C2FF;
+  .testimonialsUpdated .whatHeading .whatRightPhone {
+    display: block !important;
+  }
+  .testimonialsUpdated .whatHeading .whatRightPhone .sliderControlBut {
+    border: 0;
+    color: #00C2FF;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: xx-large;
+    font-family: Futura Bold Font;
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
   }
   .testimonialsUpdated .reviews .singleCard .reviewCard {
     background-color: #E4F8FF;

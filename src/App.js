@@ -5,10 +5,11 @@ import animate from './animate.css'
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
-import OurServices from "./components/OurServices";
+import ServicesPageUpdated from "./components/ServicesPageUpdated";
 import WorkPage from "./components/WorkPage";
-import About from "./components/About";
+import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
+import OurPortfolioPage from "./components/OurPortfolioPage";
 
 function App() {
 
@@ -22,9 +23,9 @@ function App() {
       <Router>
         <Routes>
           <Route  path="/" exact element={<Home />} />
-          <Route  path="/services" exact element={<OurServices />} />
-          <Route  path="/work" exact element={<WorkPage />} />
-          <Route  path="/about" exact element={<About />} />
+          <Route  path="/services" exact element={<ServicesPageUpdated />} />
+          <Route  path="/our-portfolio" exact element={<OurPortfolioPage />} />
+          <Route  path="/about" exact element={<AboutPage />} />
           <Route  path="/contact" exact element={<ContactPage />} />
           {/* <Route  path="*" exact element={<PageNotFound />} /> */}
         </Routes>

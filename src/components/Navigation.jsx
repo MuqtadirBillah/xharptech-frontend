@@ -12,19 +12,19 @@ function Navigation(){
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="/services">OUR SERVICES</a>
+                                <a className="nav-link" aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/work">WORK</a>
+                                <a className="nav-link" href="/services">Services</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/about">ABOUT</a>
+                                <a className="nav-link" href="/about">About us</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/contact">CONTACT</a>
+                                <a className="nav-link" href="/our-portfolio">Portfolio</a>
                             </li>
                         </ul>
-                        <button className="contactButNav">Contact us</button>
+                        <a href='./contact'><button className="contactButNav">Contact us</button></a>
                     </div>
                 </div>
             </nav>

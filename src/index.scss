@@ -66,6 +66,9 @@ body{
     font-family: Futura Light Font;
     font-size: x-large;
     font-size: 20px;
+    input:focus, select:focus, button:focus, textArea:focus{
+        outline: none !important;
+    }
     .sectionMainHeading{
         @include sectionMainHeading();
         font-weight: 800;
@@ -88,8 +91,8 @@ body{
                         height: 35px;
                     }
                 }
-                .navbar-toggler{
-
+                .navbar-toggler:focus{
+                    border-color: rgba(0, 0, 0, 0) !important;
                 }
                 .navbar-collapse{
                     ul{
@@ -100,7 +103,8 @@ body{
                             a{
                                 // color: black;
                                 color: black;
-                                font-family: Futura Bold Font;
+                                // font-family: Futura Bold Font;
+                                font-family: 'montserrat';
                                 &:hover{
                                     color: $main-blue-color;
                                 }
@@ -130,6 +134,7 @@ body{
             padding-bottom: 80px;
             .carousel-inner{
                 .carousel-item{
+                    min-height: 400px;
                     .slide{
                         .container{
                             .row{
@@ -168,7 +173,7 @@ body{
                                 .right{
                                     text-align: center;
                                     img{
-                                        width: 50%;
+                                        width: 60%;
                                     }
                                 }
                             }
@@ -327,41 +332,64 @@ body{
         // padding: 50px 70px;
         // @include padding-shared;
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 80px;
         .updatedSectionMainHeading{
             color: $main-blue-color;
             font-family: Futura Heavy Font;
+            text-align: center !important;
         }
         .whatHeading{
+            position: relative;
+            text-align: center;
             h1{
-                font-family: Futura Light Font;
-                font-size: 3.5rem;
+                font-family: 'montserrat';
+                font-size: xxx-large;
             }
             .whatLeft{
 
             }
             .whatRight{
+                position: absolute;
                 text-align: center;
-                button{
-                    background-color: rgba(0, 0, 0, 0);
-                    border: 2px solid $main-blue-color;
-                    border-radius: 5px;
+                left: 0;
+                right: 80px;
+                text-align: right;
+                width: auto;
+                .sliderControlBut{
+                    border: 0;
                     color: $main-blue-color;
-                    font-size: large;
+                    background-color: rgba(0, 0, 0, 0);
+                    font-size: xx-large;
                     font-family: Futura Bold Font;
-                    padding: 10px 40px;
                     -webkit-transition: background-color 0.5s ease-out;
                     -moz-transition: background-color 0.5s ease-out;
                     -o-transition: background-color 0.5s ease-out;
                     transition: background-color 0.5s ease-out;
                     &:hover{
-                        color: white;
-                        background-color: $main-blue-color;
+                        
+                    }
+                }
+            }
+            .whatRightPhone{
+                display: none;
+                .sliderControlBut{
+                    border: 0;
+                    color: $main-blue-color;
+                    background-color: rgba(0, 0, 0, 0);
+                    font-size: xx-large;
+                    font-family: Futura Bold Font;
+                    -webkit-transition: background-color 0.5s ease-out;
+                    -moz-transition: background-color 0.5s ease-out;
+                    -o-transition: background-color 0.5s ease-out;
+                    transition: background-color 0.5s ease-out;
+                    &:hover{
+                        
                     }
                 }
             }
         }
         .reviews{
+            margin-top: 30px;
             .singleCard{
                 .reviewCard{
                     background-color: #E4F8FF;
@@ -445,6 +473,193 @@ body{
             }
             p{
 
+            }
+        }
+    }
+    .ourPortfolioPage{
+        padding-bottom: 50px;
+        padding-top: 0 !important;
+        background-color: white;
+        .portfolioHero{
+            padding-top: 0px;
+            .updatedSectionMainHeading{
+                text-align: left;
+            }
+        }
+        .updatedSectionMainHeading{
+            color: $main-blue-color;
+            font-family: Futura Heavy Font;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .ourHeading{
+            text-align: center;
+            margin-bottom: 50PX;
+            h1{
+                font-family: Futura Light Font;
+                font-size: 3.5rem;
+            }
+            .ourLeft{
+
+            }
+        }
+        .tiless{
+            margin-top: 0px;
+            .row{
+                margin-bottom: 30px;
+                img{
+                    width: 100%;
+                }
+                h3{
+                    margin-top: 20px;
+                    font-family: Futura Bold Font;
+                }
+                p{
+    
+                }
+            }
+        }
+    }
+    .aboutPage{
+        .updatedSectionMainHeading{
+            color: $main-blue-color;
+            font-family: Futura Heavy Font;
+            text-align: left;
+            margin-top: 80px;
+        }
+        .aboutInfo{
+            padding-top: 50px;
+            h1{
+                font-family: 'montserrat';
+                font-weight: 600;
+            }
+            .imageDiv{
+                // text-align: center;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .aboutHero{
+        padding-top: 120px !important;
+        background-color: #ECFAFF;
+        .carousel{
+            // padding: 50px 70px;
+            @include padding-shared;
+            padding-bottom: 80px;
+            .carousel-inner{
+                .carousel-item{
+                    .slide{
+                        .container{
+                            .row{
+                                .left{
+                                    .updatedSectionMainHeading{
+                                        text-align: left !important;
+                                    }
+                                    h1{
+                                        margin-bottom: 20px;
+                                        font-size: 60px;
+                                        font-family: Futura light Font;
+                                    }
+                                    .highText{
+                                        color: $main-blue-color;
+                                        font-family: Futura Bold Font;
+                                        font-size: 70px;
+                                    }
+                                    button{
+                                        background-color: $main-blue-color;
+                                        border: 2px solid rgba(0,0,0,0);
+                                        border-radius: 10px;
+                                        padding: 10px 30px;
+                                        font-weight: 600;
+                                        font-size: x-large;
+                                        margin-top: 20px;
+                                        color: white;
+                                        -webkit-transition: all 0.5s ease-out;
+                                        -moz-transition: all 0.5s ease-out;
+                                        -o-transition: all 0.5s ease-out;
+                                        -webkit-transition: all 0.5s ease-in;
+                                        -moz-transition: all 0.5s ease-in;
+                                        -o-transition: all 0.5s ease-in;
+                                        &:hover{
+                                            background-color: white;
+                                            border: 2px solid $main-blue-color;
+                                            color: $main-blue-color;
+                                        }
+                                    }
+                                }
+                                .right{
+                                    text-align: center;
+                                    img{
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .aboutHero{
+        padding-top: 0px;
+        background-color: #ECFAFF;
+        .carousel{
+            // padding: 50px 70px;
+            @include padding-shared;
+            padding-bottom: 80px;
+            .carousel-inner{
+                .carousel-item{
+                    .slide{
+                        .container{
+                            .row{
+                                .left{
+                                    .updatedSectionMainHeading{
+                                        text-align: left !important;
+                                    }
+                                    h1{
+                                        margin-bottom: 20px;
+                                        font-size: 60px;
+                                        font-family: Futura light Font;
+                                    }
+                                    .highText{
+                                        color: $main-blue-color;
+                                        font-family: Futura Bold Font;
+                                        font-size: 70px;
+                                    }
+                                    button{
+                                        background-color: $main-blue-color;
+                                        border: 2px solid rgba(0,0,0,0);
+                                        border-radius: 10px;
+                                        padding: 10px 30px;
+                                        font-weight: 600;
+                                        font-size: x-large;
+                                        margin-top: 20px;
+                                        color: white;
+                                        -webkit-transition: all 0.5s ease-out;
+                                        -moz-transition: all 0.5s ease-out;
+                                        -o-transition: all 0.5s ease-out;
+                                        -webkit-transition: all 0.5s ease-in;
+                                        -moz-transition: all 0.5s ease-in;
+                                        -o-transition: all 0.5s ease-in;
+                                        &:hover{
+                                            background-color: white;
+                                            border: 2px solid $main-blue-color;
+                                            color: $main-blue-color;
+                                        }
+                                    }
+                                }
+                                .right{
+                                    text-align: center;
+                                    img{
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -883,6 +1098,76 @@ body{
             }
         }
     }
+    .servicesPageUpdated{
+        .mainContent{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+            .updatedSectionMainHeading{
+                color: $main-blue-color;
+                font-family: Futura Heavy Font;
+                text-align: center !important;
+            }
+            h1{
+                font-family: 'montserrat';
+            }
+            .services{
+                hr{
+                    background-color: $main-blue-color;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                }
+                .row{
+                    .serviceImg{
+                        text-align: center;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .serviceText{
+                        text-align: left;
+                        h2{
+                            font-family: 'montserrat';
+                        }
+                        h5{
+                            font-size: x-large;
+                        }
+                        ul{
+                            font-size: xx-large;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .servicesHero{
+        .carousel-inner{
+            .carousel-item{
+                .slide{
+                    .container{
+                        .row{
+                            .left{
+                                .highText{
+                                    color: $main-blue-color;
+                                    font-family: Futura Bold Font;
+                                    font-size: xx-large !important;
+                                }
+                                button{
+                                    margin-top: 20px;
+                                }
+                            }
+                            .right{
+                                img{
+                                    width: 60% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .designProcess{
         // padding-top: 30px;
         .headings{
@@ -1237,29 +1522,42 @@ body{
                         }
                     }
                 }
-                .team{
-                    margin-top: 100px;
-                    .row{
-                        .memberCard{
-                            margin-top: 100px;
-                            .cardHeader{
-                                text-align: center;
-                                img{
-                                    width: 50%;
-                                }
-                            }
-                            .cardBody{
-                                text-align: center;
-                                padding-top: 30px;
-                                h2{
-                                    font-family: Futura Bold Font;
-                                    line-height: 0;
-                                }
-                                h3{
-                                    line-height: 0;
-                                }
-                            }
-                        }
+            }
+        }
+    }
+    
+    .team{
+        .container-fluid{
+            padding-top: 80px;
+            padding-bottom: 100px;
+            .sectionMainHeading{
+                text-align: center;
+                // margin-bottom: 80px;
+            }
+            .in{
+                position: relative;
+                .backShape{
+                    position: absolute;
+                    background-color: $main-blue-color;
+                    height: 100px;
+                    width: 100%;
+                    z-index: -100;
+                }
+                .members{
+                    padding-top: 80px;
+                    background-color: white;
+                    h3{
+                        font-family: 'montserrat';
+                        font-weight: 500;
+                    }
+                    h5{
+                        font-family: 'montserrat';
+                    }
+                    p{
+
+                    }
+                    img{
+                        height: 100%;
                     }
                 }
             }
@@ -1302,99 +1600,84 @@ body{
 
     // Contact Page 
     .contactPage{
-        padding-top: 40px;
-        .banner{
-            padding: 100px 70px;
-            @include padding-shared();
-            h1{
-                font-size: 3.5rem;
-                font-family: Futura Bold Font;
-                color: white;
-            }
-        }
-        .contactMain{
-            padding: 50px 70px;
-            @include padding-shared();
-            .contactForm{
-                margin-bottom: 50px;
-                .form{
-                    // border: 1px solid black;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    .container-fluid{
-                        .contactHeading{
-                            font-family: Futura Heavy Font;
-                            hr{
+        .container-fluid{
+            .row{
+                background-color: $poster-color-d4;
+                .left{
+                    min-height: 100vh;
+                    padding: 5%;
+                    background-color: $poster-color-d4;
+                    padding-top: 140px;
+                    padding-bottom: 100px;
+                    .container{
+                        .contactForm{
+                            h1{
+                                font-family: 'montserrat';
+
                             }
-                        }
-                        .row{
-                            label{
-                                font-family: Futura Bold Font;
-                                // margin-top: 30px;
-                                margin-bottom: 5px;
-                                .impStar{
-                                    color: red;
+                            h3{
+
+                            }
+                            .innerForm{
+                                padding-top: 50px;
+                                input{
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                    border-radius: 30px;
+                                    padding: 10px 25px;
+                                    border: 0;
+                                }
+                                textArea{
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                    border-radius: 30px;
+                                    padding: 20px 25px;
+                                    border: 0;
+                                }
+                                button{
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                    border-radius: 30px;
+                                    padding: 15px 10px;
+                                    border: 0;
+                                    background-color: $main-blue-color;
+                                    font-size: large;
+                                    font-family: 'montserrat';
+                                    color: white;
                                 }
                             }
-                            input, textarea{
+                        }
+                    }
+                }
+                .right{
+                    padding: 5%;
+                    min-height: 100vh;
+                    padding-top: 140px;
+                    padding-bottom: 100px;
+                    background-color: white;
+
+                    .container{
+                        .up{
+                            text-align: center;
+                            img{
                                 width: 100%;
-                                padding: 5px 10px;
-                                margin-bottom: 20px;
                             }
-                            button{
-                                background-color: $main-blue-color;
-                                color: white;
-                                padding: 10px 20px;
-                                border: 2px solid rgba(0, 0, 0, 0);
-                                -webkit-transition: all 0.5s ease-out;
-                                -moz-transition: all 0.5s ease-out;
-                                -o-transition: all 0.5s ease-out;
-                                -webkit-transition: all 0.5s ease-in;
-                                -moz-transition: all 0.5s ease-in;
-                                -o-transition: all 0.5s ease-in;
-                                &:hover{
-                                    background-color: white;
-                                    border: 2px solid $main-blue-color;
-                                    color: $main-blue-color;
+                        }
+                        .down{
+                            background-color: white;
+                            padding-top: 30px;
+                            padding-bottom: 30px;
+                            .row{
+                                margin-top: 20px;
+                                background-color: white;
+                                h3{
+                                    i{
+                                        color: $main-blue-color;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-            }
-            .contactInfo{
-                // border: 1px solid black;
-                padding: 10px;
-                h1{
-                    font-family: Futura Bold Font;
-                }
-                .country{
-                    font-family: Futura Bold Font;
-                    margin-top: 30px;
-                    i{
-                        margin-right: 10px;
-                    }
-                }
-                .location{
-                    margin-top: 20px;
-                    i{
-                        margin-right: 10px;
-                    }
-                }
-                .phone{
-                    margin-top: 20px;
-                    i{
-                        margin-right: 10px;
-                    }
-                }
-                .countryIcon{
-                    color: #0080ff;
-                }
-                .locationIcon{
-                    color: #0015ff;
-                }
-                .phoneIcon{
-                    color: #00a60e;
                 }
             }
         }
@@ -1585,6 +1868,51 @@ body{
             }
         }
     }
+    
+    
+    .team{
+        .container-fluid{
+            padding-top: 50px;
+            padding-bottom: 10px;
+            .sectionMainHeading{
+                text-align: center;
+                // margin-bottom: 80px;
+            }
+            .in{
+                text-align: center;
+                position: relative;
+                .backShape{
+                    position: absolute;
+                    background-color: $main-blue-color;
+                    height: 100px;
+                    width: 100%;
+                    z-index: -100;
+                }
+                .members{
+                    padding-top: 80px;
+                    background-color: white;
+                    text-align: center !important;
+                    h3{
+                        font-family: 'montserrat';
+                        font-weight: 500;
+                        text-align: center !important;
+                    }
+                    h5{
+                        font-family: 'montserrat';
+                        text-align: center !important;
+                    }
+                    p{
+                        text-align: center !important;
+                        margin-bottom: 50px;
+                    }
+                    img{
+                        height: 100%;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
     .workPage{
         .banner{
             @include padding-shared-992;
@@ -1696,6 +2024,99 @@ body{
             }
         }
     }
+    .testimonialsUpdated{
+        // padding: 50px 70px;
+        // @include padding-shared;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .updatedSectionMainHeading{
+            color: $main-blue-color;
+            font-family: Futura Heavy Font;
+        }
+        .whatHeading{
+            position: relative;
+            text-align: center;
+            h1{
+                font-family: 'montserrat';
+                font-size: xxx-large;
+            }
+            .whatLeft{
+
+            }
+            .whatRight{
+                position: static !important;
+                text-align: center !important;
+                display: none;
+                .sliderControlBut{
+                    border: 0;
+                    color: $main-blue-color;
+                    background-color: rgba(0, 0, 0, 0);
+                    font-size: xx-large;
+                    font-family: Futura Bold Font;
+                    -webkit-transition: background-color 0.5s ease-out;
+                    -moz-transition: background-color 0.5s ease-out;
+                    -o-transition: background-color 0.5s ease-out;
+                    transition: background-color 0.5s ease-out;
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .whatRightPhone{
+                display: block !important;
+                .sliderControlBut{
+                    border: 0;
+                    color: $main-blue-color;
+                    background-color: rgba(0, 0, 0, 0);
+                    font-size: xx-large;
+                    font-family: Futura Bold Font;
+                    -webkit-transition: background-color 0.5s ease-out;
+                    -moz-transition: background-color 0.5s ease-out;
+                    -o-transition: background-color 0.5s ease-out;
+                    transition: background-color 0.5s ease-out;
+                    &:hover{
+                        
+                    }
+                }
+            }
+        }
+        .reviews{
+            .singleCard{
+                .reviewCard{
+                    background-color: #E4F8FF;
+                    padding: 20px 40px;
+                    margin: 10px;
+                    margin-left: 0;
+                    margin-right: 0 !important;
+                    .rating{
+                        .ratingNo{
+                            font-size: larger;
+                            margin-right: 10px;
+                            font-family: Futura Bold Font;
+                        }
+                        .filled{
+                           color: #FFBB55; 
+                        }
+                    }
+                    .comments{
+                        p{
+                            font-size: larger;
+                            color: #887E7E;
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .client{
+                        img{
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 @media only screen and (max-width: 576px) {
 
@@ -1754,30 +2175,48 @@ body{
             font-family: Futura Heavy Font;
         }
         .whatHeading{
+            position: relative;
+            text-align: center;
             h1{
-                font-family: Futura Light Font;
-                font-size: 3.5rem;
+                font-family: 'montserrat';
+                font-size: xxx-large;
             }
             .whatLeft{
 
             }
             .whatRight{
-                text-align: center;
-                button{
-                    background-color: rgba(0, 0, 0, 0);
-                    border: 2px solid $main-blue-color;
-                    border-radius: 5px;
+                position: static !important;
+                text-align: center !important;
+                display: none;
+                .sliderControlBut{
+                    border: 0;
                     color: $main-blue-color;
-                    font-size: large;
+                    background-color: rgba(0, 0, 0, 0);
+                    font-size: xx-large;
                     font-family: Futura Bold Font;
-                    padding: 10px 40px;
                     -webkit-transition: background-color 0.5s ease-out;
                     -moz-transition: background-color 0.5s ease-out;
                     -o-transition: background-color 0.5s ease-out;
                     transition: background-color 0.5s ease-out;
                     &:hover{
-                        color: white;
-                        background-color: $main-blue-color;
+                        
+                    }
+                }
+            }
+            .whatRightPhone{
+                display: block !important;
+                .sliderControlBut{
+                    border: 0;
+                    color: $main-blue-color;
+                    background-color: rgba(0, 0, 0, 0);
+                    font-size: xx-large;
+                    font-family: Futura Bold Font;
+                    -webkit-transition: background-color 0.5s ease-out;
+                    -moz-transition: background-color 0.5s ease-out;
+                    -o-transition: background-color 0.5s ease-out;
+                    transition: background-color 0.5s ease-out;
+                    &:hover{
+                        
                     }
                 }
             }

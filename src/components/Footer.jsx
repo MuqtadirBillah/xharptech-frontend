@@ -9,7 +9,7 @@ function Footer(){
         <div className="footer">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-lg-4 col-md-4 col-sm-12 left">
+                    <div className="col-lg-4 col-md-4 col-sm-12 left" data-aos="flip-right" data-aos-delay="100" data-aos-duration="600">
                         <img src="/assets/images/logo.png" alt="" />
                         <p>Follow us</p>
                         <h5>
@@ -20,7 +20,7 @@ function Footer(){
                             <a href='/' ><span className="linkedin"><i class="fab fa-linkedin-in"></i></span></a>
                         </h5>
                     </div>
-                    <div className="col-lg-4 col-md-4 col-sm-12 mid">
+                    <div className="col-lg-4 col-md-4 col-sm-12 mid" data-aos="slide-down" data-aos-delay="100" data-aos-duration="600">
                         <h3>CORPORATE HEADQUATERS</h3>
                         <div className="info">
                             <div className="row">
@@ -49,7 +49,7 @@ function Footer(){
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-4 col-sm-12 right">
+                    <div className="col-lg-4 col-md-4 col-sm-12 right" data-aos="flip-right" data-aos-delay="100" data-aos-duration="600">
                         <h3>SOCIAL & NEWSLETTER</h3>
                         <h1>Get the latest news<br />about DB</h1>
                         <input type="text" placeholder="Your email address" name="" id="" />

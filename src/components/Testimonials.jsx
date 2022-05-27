@@ -20,7 +20,7 @@ function Testimonials(){
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 2.5,
+        slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
           {
@@ -51,7 +51,7 @@ function Testimonials(){
     };
 
     return(
-        <div className="testimonials" data-aos="fade-up"  data-aos-delay="50" style={backStyle}>
+        <div className="testimonials" data-aos="fade-up"  data-aos-delay="50">
             <h5 data-aos="fade-down"  data-aos-delay="80" data-aos-duration="800">WHAT PEOPLE SAY ABOUT US</h5>
             <h1 className="sectionMainHeading" data-aos="fade-up"  data-aos-delay="80" data-aos-duration="800">Our great clients</h1>
             <Slider {...settings}>
